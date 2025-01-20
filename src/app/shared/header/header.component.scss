@@ -1,0 +1,31 @@
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 4.75rem;
+  padding: 1rem clamp(2rem, 13.333vw - 6rem, 6rem);
+  height: 92px;
+  // background-color: #fffcf3;
+}
+.logo-box{
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      color: black;
+      > img{
+        width: 70px;
+      }
+}
+.language-switch{
+  display: flex;
+      gap: 20px;
+  >img{
+  width: 20px;
+  }
+}
