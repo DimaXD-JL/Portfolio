@@ -1,0 +1,66 @@
+.heroMain{
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  margin-top: 60px;
+
+
+  >h1{
+    font-family: 'Syne', sans-serif;
+    font-size: 128px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+}
+.heroInfo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 50px;
+}
+.subName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+
+    >h3{
+      font-family: 'Overpass', sans-serif;
+      font-size: 30px;
+      color: #00BC8F;
+    }
+}
+.heroMail{
+  text-decoration: none;
+    font-family: unset;
+    text-align: left;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+.scrolldown{
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+}
+.heroArrow{
+  >img{
+  height: 100px;
+  animation: _ngcontent-ng-c972065463_arrow-down 1s infinite;
+}
+}
+
+

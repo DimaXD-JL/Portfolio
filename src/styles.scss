@@ -11,7 +11,7 @@ body{
 
 *{
   scrollbar-width: thin;
-  scrollbar-color: #FD5B4F #dddddd00;
+  scrollbar-color: #00BC8F #dddddd00;
 }
 
 ::-webkit-scrollbar {
@@ -25,7 +25,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fffcf3;
+  background-color: #00BC8F;
   border: 1px solid transparent;
 }
 
@@ -81,4 +81,7 @@ body{
 
 .fontSyne{
   font-family: 'Syne', sans-serif;
+}
+.fontOver{
+  font-family: 'Overpass', sans-serif;
 }
