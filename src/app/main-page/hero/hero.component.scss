@@ -56,7 +56,7 @@
     transform: rotate(-180deg);
 }
 .scrolldown{
-  display: flex;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -67,22 +67,40 @@
       }
 }
 
-  .arrow-svg {
-    transition: transform 1s ease;
-  }
+.arrow-svg {
+  animation: arrowMove 1.5s infinite; /* Animation wird auf das gesamte SVG angewendet */
+  transition: transform 1s ease;
+}
 
-  .arrow-svg:hover {
-    transform: translateY(200px); /* Pfeil nach unten bewegen */
-  }
-  
-  .arrow-path {
-    transition: transform 0.5s ease;
-  }
-  
-  .arrow-svg:hover .arrow-path {
-    transform: translateY(10px); /* Animation für den Pfeil */
-  }
+.arrow-path {
+  animation: arrowPathMove 2s infinite; /* Animation für den Pfeil */
+  transition: transform 0.5s ease;
+}
 
+/* Keyframes für die Animation des Pfeils */
+@keyframes arrowMove {
+  0% {
+    transform: translateY(-80px); /* Anfangsposition */
+  }
+  50% {
+    transform: translateY(10px); /* Pfeil nach unten bewegen */
+  }
+  100% {
+    transform: translateY(0); /* Zurück zum Ausgangspunkt */
+  }
+}
 
+/* Keyframes für die Animation der Pfeilform */
+@keyframes arrowPathMove {
+  0% {
+    transform: translateY(0); /* Anfangsposition */
+  }
+  50% {
+    transform: translateY(10px); /* Pfeil ein kleines Stück nach unten verschieben */
+  }
+  100% {
+    transform: translateY(0); /* Zurück zum Ausgangspunkt */
+  }
+}
 
 
