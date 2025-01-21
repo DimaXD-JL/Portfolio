@@ -66,20 +66,17 @@
         font-weight: bold;
       }
 }
-// .heroArrow{
-//   // height: 100px;
-//   // animation: infinite;
-// }
+
   .arrow-svg {
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
   }
 
   .arrow-svg:hover {
-    transform: translateY(10px); /* Pfeil nach unten bewegen */
+    transform: translateY(200px); /* Pfeil nach unten bewegen */
   }
   
   .arrow-path {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
   
   .arrow-svg:hover .arrow-path {

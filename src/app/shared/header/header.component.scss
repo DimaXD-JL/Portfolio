@@ -23,7 +23,9 @@ header{
 }
 .language-switch{
   display: flex;
-      gap: 50px;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
   >img{
   width: 20px;
   }
@@ -84,33 +86,12 @@ p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-///////////////////////////////////////////////////////////////
-// #menu-icon {
-//   display: inline-block;
-//   cursor: pointer;
- 
-// }
 
-// #menu-icon path {
-//   transition: all 0.3s ease;
-//   transform-origin: center;
-// }
-
-// .rotate1 {
-//   transform: rotate(45deg);
-// }
-
-// .rotate3 {
-//   transform: rotate(-45deg);
-// }
-
-// .hide {
-//   opacity: 0;
-// }
 #animatedSVG {
   width: 40px;
   height: 32px;
   cursor: pointer;
+
 }
 
 .line {
