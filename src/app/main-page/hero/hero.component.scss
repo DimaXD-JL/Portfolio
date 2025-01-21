@@ -1,24 +1,27 @@
 .heroMain{
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  height: 100vh;
+  // max-width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
   margin-top: 60px;
 
 
   >h1{
     font-family: 'Syne', sans-serif;
-    font-size: 128px;
+    // font-size: 128px;
+    font-size: clamp(30px, 10vw, 128px);
     font-weight: 800;
     margin: 0;
     line-height: 100%;
     text-align: center;
     padding: 20px;
   }
+ 
 
 }
 .heroInfo{
@@ -38,8 +41,11 @@
 
     >h3{
       font-family: 'Overpass', sans-serif;
-      font-size: 30px;
+      font-size: clamp(12px, 2vw, 30px);
       color: #00BC8F;
+    }
+    >img{
+      width: 50%;
     }
 }
 .heroMail{
@@ -55,12 +61,31 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      >p{
+        font-family: 'Syne', sans-serif;
+        font-weight: bold;
+      }
 }
-.heroArrow{
-  >img{
-  height: 100px;
-  animation: _ngcontent-ng-c972065463_arrow-down 1s infinite;
-}
-}
+// .heroArrow{
+//   // height: 100px;
+//   // animation: infinite;
+// }
+  .arrow-svg {
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-svg:hover {
+    transform: translateY(10px); /* Pfeil nach unten bewegen */
+  }
+  
+  .arrow-path {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-svg:hover .arrow-path {
+    transform: translateY(10px); /* Animation für den Pfeil */
+  }
+
+
 
 

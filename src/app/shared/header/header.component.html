@@ -17,8 +17,22 @@
 
 
 
-<nav>
-  <img src="/assets/img/burger-menu S3.svg" alt="menu">
+<nav> 
+  <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" 
+  [ngClass]="{'toggle': isToggled}" (click)="toggleMenu()">
+<path class="line" d="M2 2H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+<path class="line" d="M2 19H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+<path class="line" d="M2 36H42" stroke="black" stroke-width="4" stroke-linecap="square"/>
+</svg>
+<div class="overlay" [ngClass]="{'show': isToggled}">
+  <div class="overlay-content">
+      <a href="#link1">Link 1</a>
+      <a href="#link2">Link 2</a>
+      <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a>
+  </div>
+</div>
 </nav>
 </div>
+
 </header>

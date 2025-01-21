@@ -10,4 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
 
+  isToggled = false;
+
+  toggleMenu(): void {
+    this.isToggled = !this.isToggled;
+  }
 }

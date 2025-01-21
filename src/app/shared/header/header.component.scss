@@ -6,10 +6,9 @@ header{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
-  height: 4.75rem;
-  padding: 1rem clamp(2rem, 13.333vw - 6rem, 6rem);
-  height: 92px;
+  // max-width: 1440px;
+  height: 112px;
+  padding: 30px;
   background-color: #fffcf3;
 }
 .logo-box{
@@ -85,8 +84,112 @@ p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-// .dropdown:hover .dropbtn {
-//   background-color: black;
+///////////////////////////////////////////////////////////////
+// #menu-icon {
+//   display: inline-block;
+//   cursor: pointer;
+ 
 // }
+
+// #menu-icon path {
+//   transition: all 0.3s ease;
+//   transform-origin: center;
+// }
+
+// .rotate1 {
+//   transform: rotate(45deg);
+// }
+
+// .rotate3 {
+//   transform: rotate(-45deg);
+// }
+
+// .hide {
+//   opacity: 0;
+// }
+#animatedSVG {
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.line {
+  transform-origin: center;
+  transition: d 0.2s ease-in-out;
+}
+
+.toggle .line:nth-child(1) {
+  animation: transformTopLine 0.4s forwards;
+}
+
+.toggle .line:nth-child(2) {
+  animation: transformMiddleLine 0.4s forwards;
+}
+
+.toggle .line:nth-child(3) {
+  animation: transformBottomLine 0.4s forwards;
+}
+
+@keyframes transformTopLine {
+  0% {
+    d: path("M2 2H42");
+  }
+  100% {
+    d: path("M20 15.856L35.3209 3.0002");
+  }
+}
+
+@keyframes transformMiddleLine {
+  0% {
+    d: path("M2 19H42");
+  }
+  100% {
+    d: path("M4.67969 3.14307L35.3215 28.8546");
+  }
+}
+
+@keyframes transformBottomLine {
+  0% {
+    d: path("M2 36H42");
+  }
+  100% {
+    d: path("M5 28.856L20.3209 16.0002");
+  }
+}
+
+
+
+.overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  margin-top: 80px;
+  background:#fffcf3;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+.overlay-content a {
+  display: block;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.overlay-content a:hover {
+  text-decoration: underline;
+}
