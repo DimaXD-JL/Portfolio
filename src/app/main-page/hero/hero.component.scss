@@ -1,13 +1,25 @@
-.heroMain{
+@import '../../../styles.scss';
+
+.hero{
   position: relative;
   width: 100%;
   height: 100vh;
-  // max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  align-content: center;
+}
+
+
+.hero-content{
+  position: relative;
+  max-width: 1440px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  // flex-wrap: wrap;
   margin-top: 60px;
 
 
@@ -24,20 +36,24 @@
  
 
 }
-.heroInfo{
+.hero-info{
+  position: absolute;
+  z-index: 0;
+  // bottom: 0;
+  margin-top: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.sub-name{
       display: flex;
-      justify-content: space-between;
+      // z-index: 0;
+      justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 50px;
-}
-.subName{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    width: 100%;
+      padding: 20px;
+      gap: 20px;
 
     >h3{
       font-family: 'Overpass', sans-serif;
@@ -48,9 +64,12 @@
       width: 50%;
     }
 }
-.heroMail{
+.hero-mail{
+  font-family: 'Overpass', sans-serif;
+   font-size: 22px;
+   font-weight: 800;
+   color: $primary;
   text-decoration: none;
-    font-family: unset;
     text-align: left;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);

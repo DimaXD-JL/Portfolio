@@ -1,5 +1,5 @@
 .about{
-  position: relative;
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -25,20 +25,9 @@
     // opacity: 0;
     // filter: sepia(0.0875);
     // transition: opacity 0.25s ease-in-out;
-
 }
 
-.img-border{
-  height: 500px;
-  width: 500px;
-  position: relative;
-  // opacity: 0;
-  transition: 1s ease;
-  border: 4px solid rgb(244, 97, 107);
-  top: 0px;
-  left: 0px;
-  
-}
+
 h2{
   margin-left: 7%;
   font-family: 'Syne', sans-serif;
@@ -82,4 +71,11 @@ h2:hover{
 .btn:hover{
   padding:16px 60px;
   font-weight: bold;
+}
+.arrow{
+  padding: 50px;
+  // max-width: 1448px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: end;
 }
