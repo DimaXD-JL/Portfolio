@@ -24,14 +24,15 @@ background-color:$secondary;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00BC8F;
+  background-color: transparent;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #00BC8F;
+  background-color: #fffcf3;
   border: 1px solid transparent;
 }
+
 
 
 

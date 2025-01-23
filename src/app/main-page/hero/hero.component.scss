@@ -39,12 +39,14 @@
 .hero-info{
   position: absolute;
   z-index: 0;
-  // bottom: 0;
+  bottom: 0;
   margin-top: 30%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem clamp(2rem, 13.333vw - 6rem, 6rem);
+
 }
 .sub-name{
       display: flex;
