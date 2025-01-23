@@ -17,7 +17,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
 }
 .skills-wrapper {
   border: 4px solid $primary;
@@ -46,10 +46,10 @@ h2 {
   font-size: 18px;
   font-family: "Overpass", sans-serif;
 
-  > img {
-    width: 100%;
-    height: 100%;
-  }
+  // > img {
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
 .new-skills {
   display: flex;
@@ -65,4 +65,11 @@ h2 {
     text-decoration: none;
     color: $hightlight;
   }
+}
+.arrow {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: start;
 }

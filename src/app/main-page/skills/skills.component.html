@@ -4,7 +4,7 @@
     <div class="skills">
       @for(skill of skill; track skill.name; let index = $index ){
       <div class="icon-box">
-        <img src="/assets/img/icons/{{ skill.img }}" alt="" />
+        <img src="/assets/img/icons/{{ skill.img }}" alt="{{ skill.name }}" />
         <p>{{ skill.name }}</p>
       </div>
       }
@@ -12,9 +12,13 @@
     <div class="new-skills">
       <img src="/assets/img/icons/Continued-learning.png" alt="" />
       <p>
-        dont`s see the skill you need? <a href="">Contact me</a> I`m always read
+        dont's see the skill you need? <a href="">Contact me</a> I'm always read
         to learn!
       </p>
     </div>
+  </div>
+
+  <div class="arrow">
+    <a href=""><img src="../../../assets/img/arrow-left.png" alt="arrow" /></a>
   </div>
 </section>

@@ -16,8 +16,8 @@ export class SkillsComponent {
       img: 'Angular.png',
     },
     {
-      name: 'Angular',
-      img: 'Angular.png',
+      name: 'html',
+      img: 'html.png',
     },
     {
       name: 'Api',
@@ -30,6 +30,22 @@ export class SkillsComponent {
     {
       name: 'Firebase',
       img: 'Firebase.png',
+    },
+    {
+      name: 'Git',
+      img: 'Git.png',
+    },
+    {
+      name: 'JavaScript',
+      img: 'JavaScript.png',
+    },
+    {
+      name: 'Material Design',
+      img: 'Material_Design.png',
+    },
+    {
+      name: 'TypeScript',
+      img: 'TypeScript.png',
     },
   ];
 }
