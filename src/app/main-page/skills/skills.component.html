@@ -2,7 +2,7 @@
   <div class="skills-wrapper">
     <h2>My skills</h2>
     <div class="skills">
-      @for(skill of skill; track skill.name; let index = $index ){
+      @for(skill of skills; track skill.name; let index = $index ){
       <div class="icon-box">
         <img src="/assets/img/icons/{{ skill.img }}" alt="{{ skill.name }}" />
         <p>{{ skill.name }}</p>

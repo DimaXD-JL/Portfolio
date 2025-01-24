@@ -1,5 +1,7 @@
-@mixin dFlex($jc: center,$ai: center){
+@mixin dFlex($jc: center, $ai: center, $fd: column, $g: 1rem) {
   display: flex;
   justify-content: $jc;
+  flex-direction: $fd;
   align-items: $ai;
+  gap: $g;
 }

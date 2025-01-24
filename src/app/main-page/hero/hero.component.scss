@@ -1,20 +1,16 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
-.hero{
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 60px;
-  align-content: center;
 }
 
-
-.hero-content{
+.hero-content {
   position: relative;
-  max-width: 1440px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +18,7 @@
   // flex-wrap: wrap;
   margin-top: 60px;
 
-
-  >h1{
-    font-family: 'Syne', sans-serif;
-    // font-size: 128px;
+  > h1 {
     font-size: clamp(30px, 10vw, 128px);
     font-weight: 800;
     margin: 0;
@@ -33,10 +26,8 @@
     text-align: center;
     padding: 20px;
   }
- 
-
 }
-.hero-info{
+.hero-info {
   position: absolute;
   z-index: 0;
   bottom: 0;
@@ -45,47 +36,45 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem clamp(2rem, 13.333vw - 6rem, 6rem);
-
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem
+    clamp(2rem, 13.333vw - 6rem, 6rem);
 }
-.sub-name{
-      display: flex;
-      // z-index: 0;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding: 20px;
-      gap: 20px;
+.sub-name {
+  display: flex;
 
-    >h3{
-      font-family: 'Overpass', sans-serif;
-      font-size: clamp(12px, 2vw, 30px);
-      color: #00BC8F;
-    }
-    >img{
-      width: 50%;
-    }
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+
+  > p {
+    font-size: clamp(12px, 2vw, 30px);
+    color: #00bc8f;
+  }
+  > img {
+    width: 50%;
+  }
 }
-.hero-mail{
-  font-family: 'Overpass', sans-serif;
-   font-size: 22px;
-   font-weight: 800;
-   color: $primary;
+.hero-mail {
+  font-family: "Overpass", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: $primary;
   text-decoration: none;
-    text-align: left;
-    writing-mode: vertical-rl;
-    transform: rotate(-180deg);
+  text-align: left;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
 }
-.scrolldown{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      >p{
-        font-family: 'Syne', sans-serif;
-        font-weight: bold;
-      }
+.scrolldown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  > p {
+    font-weight: bold;
+  }
 }
 
 .arrow-svg {
@@ -117,11 +106,11 @@
     transform: translateY(0); /* Anfangsposition */
   }
   50% {
-    transform: translateY(10px); /* Pfeil ein kleines Stück nach unten verschieben */
+    transform: translateY(
+      10px
+    ); /* Pfeil ein kleines Stück nach unten verschieben */
   }
   100% {
     transform: translateY(0); /* Zurück zum Ausgangspunkt */
   }
 }
-
-

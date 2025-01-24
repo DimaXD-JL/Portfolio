@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { SkillsComponent } from "./skills/skills.component";
-
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [HeroComponent, AboutMeComponent, SkillsComponent],
+  imports: [
+    HeroComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    PortfolioComponent,
+  ],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.scss'
+  styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent {
-
-
-  
-}
+export class MainPageComponent {}

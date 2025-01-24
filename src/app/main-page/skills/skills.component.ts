@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  skill = [
+  skills = [
     {
       name: 'Angular',
       img: 'Angular.png',

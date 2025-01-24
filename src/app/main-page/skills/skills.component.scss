@@ -3,16 +3,24 @@
 h2 {
   display: flex;
   justify-content: center;
-  // top: 20px;
   width: max-content;
   position: relative;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -130%);
   padding: 0 20px;
-  font-family: "Syne", sans-serif;
   font-size: 78px;
   font-weight: 800;
   color: $primary;
+  background-color: $secondary;
+
+  // &:hover {
+  //   color: $hightlight;
+  // }
+}
+h2 {
+  :hover {
+    color: $hightlight;
+  }
 }
 .skills-section {
   width: 100%;
@@ -26,7 +34,6 @@ h2 {
 .skills-wrapper {
   border: 4px solid $primary;
   width: 100%;
-  max-width: 1448px;
   display: grid;
   justify-content: center;
 }
@@ -40,8 +47,6 @@ h2 {
   gap: 30px;
 }
 .icon-box {
-  // padding: 50px;
-  max-width: 1448px;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -49,11 +54,6 @@ h2 {
   align-items: center;
   font-size: 18px;
   font-family: "Overpass", sans-serif;
-
-  // > img {
-  //   width: 100%;
-  //   height: 100%;
-  // }
 }
 .new-skills {
   display: flex;

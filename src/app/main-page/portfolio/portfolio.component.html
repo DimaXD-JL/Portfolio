@@ -1,1 +1,25 @@
-<p>portfolio works!</p>
+<section class="portfolio-section">
+  <div>
+    <h2>Portfolio</h2>
+    <p>
+      Explore a section of my work here- Interact with projects to see my skills
+      in action.
+    </p>
+  </div>
+  <div class="project">
+    @for(project of project; track project.name; let index = $index) {
+    <div class="project-box">
+      <img
+        src="/assets/img/projects/{{ project.img }}"
+        alt="{{ project.name }}"
+      />
+      <div class="project-info">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.languages }}</p>
+        <span>{{ project.description }}</span>
+        <a class="btn" href="{{ project.link }}">View project</a>
+      </div>
+    </div>
+    }
+  </div>
+</section>
