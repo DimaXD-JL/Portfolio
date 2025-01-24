@@ -36,6 +36,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1440px;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem
     clamp(2rem, 13.333vw - 6rem, 6rem);
 }

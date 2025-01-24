@@ -19,5 +19,29 @@ export class PortfolioComponent {
       img: '../../../assets/img/project-test.png',
       link: '',
     },
+    {
+      name: 'Join',
+      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
+      description:
+        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
+      img: '../../../assets/img/project-test.png',
+      link: '',
+    },
+    {
+      name: 'Join',
+      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
+      description:
+        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
+      img: '../../../assets/img/project-test.png',
+      link: '',
+    },
+    {
+      name: 'Join',
+      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
+      description:
+        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
+      img: '../../../assets/img/project-test.png',
+      link: '',
+    },
   ];
 }

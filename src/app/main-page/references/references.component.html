@@ -1,21 +1,24 @@
 <section class="reference-section">
   <div>
-    <h2>References</h2>
+    <h3>References</h3>
     <p>
       I thrive both independently and as part of a team. Here's what my
       colleagues have to say about working with me.
     </p>
   </div>
   <div class="reference">
+    @for(reference of references; track reference.name; let index = $index) {
     <div class="reference-box">
       <span class="icon">,,</span>
-      <h3>S.Michael</h3>
-      <p>Team Partner</p>
-      <span
-        >Michael really kept the team together with his great organization and
-        clear communication. We wouldn't have got this far without his
-        commitment.</span
-      >
+      <h3>{{ reference.name }}</h3>
+      <p>{{ reference.position }}</p>
+      <p>
+        {{ reference.references }}
+      </p>
     </div>
+    }
   </div>
 </section>
+<div class="arrow">
+  <a href=""><img src="../../../assets/img/arrow-r.png" alt="arrow" /></a>
+</div>

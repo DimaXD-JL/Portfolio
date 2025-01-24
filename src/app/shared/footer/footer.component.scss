@@ -1,19 +1,53 @@
-footer{
-  position: relative;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: clamp(2rem, 13.333vw - 6rem, 6rem) clamp(2rem, 13.333vw - 6rem, 6rem) 2rem clamp(2rem, 13.333vw - 6rem, 6rem);
-    flex-grow: 1;
-    background-color: #1b1819;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+@import "../../../styles.scss";
+footer {
+  // position: relative;
+  // width: 100%;
+  // height: fit-content;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // padding: clamp(2rem, 13.333vw - 6rem, 6rem) clamp(2rem, 13.333vw - 6rem, 6rem)
+  //   2rem clamp(2rem, 13.333vw - 6rem, 6rem);
+  // flex-grow: 1;
+  background-color: #1b1819;
+  // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 }
-.logo{
-
-
-  >img{
+.footer-box {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  > a {
+    color: $secondary;
+  }
+}
+p {
+  color: $secondary;
+  font-size: 22px;
+  font-family: "Overpass", sans-serif;
+}
+.logo {
+  > img {
     width: 70px;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    &:hover {
+      color: #00bc8f;
+    }
   }
 }

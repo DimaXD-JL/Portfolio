@@ -31,14 +31,27 @@ h2:hover {
   }
 }
 .project-box {
-  width: 100%;
+  // width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.reversed-layout {
+  flex-direction: row-reverse; /* Bild rechts, Text links */
 }
 .project-info {
   width: 100%;
   display: flex;
   flex-direction: column;
+  > h3 {
+    font-size: 45px;
+  }
+  > p {
+    color: $hightlight;
+    font-size: 23px;
+  }
 }
 .btn {
   border: solid 5px black;

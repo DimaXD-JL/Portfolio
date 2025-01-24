@@ -90,8 +90,9 @@ h2:hover {
 }
 .arrow {
   padding: 50px;
+  width: 100%;
   // max-width: 1448px;
   display: flex;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   justify-content: end;
 }

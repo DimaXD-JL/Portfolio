@@ -1,31 +1,59 @@
 @import "../../../styles.scss";
 
+h2 {
+  font-size: 78px;
+}
 .reference-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 .reference {
+  width: 100%;
   padding: 50px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .reference-box {
   font-family: "Overpass", sans-serif;
   border: 4px solid black;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 390px;
   height: 344px;
+
+  > h3 {
+    font-size: 22px;
+    margin: 0;
+  }
 }
+p {
+  margin: 16px;
+}
+
 .icon {
   position: relative;
   left: 50%;
   transform: translate(-50%, -12%);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 800;
   color: black;
+}
+.reference-box:hover {
+  border-color: $hightlight;
+  > .icon {
+    color: $hightlight;
+  }
+}
+.arrow {
+  padding: 50px;
+  // max-width: 1448px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: end;
 }
