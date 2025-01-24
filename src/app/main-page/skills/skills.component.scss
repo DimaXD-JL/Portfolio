@@ -9,6 +9,10 @@ h2 {
   left: 50%;
   transform: translate(-50%, -55%);
   padding: 0 20px;
+  font-family: "Syne", sans-serif;
+  font-size: 78px;
+  font-weight: 800;
+  color: $primary;
 }
 .skills-section {
   width: 100%;
@@ -33,7 +37,7 @@ h2 {
   justify-content: center;
 
   flex-wrap: wrap;
-  gap: 120px;
+  gap: 30px;
 }
 .icon-box {
   // padding: 50px;
