@@ -1,0 +1,31 @@
+@import "../../../styles.scss";
+
+.reference-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.reference {
+  padding: 50px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+.reference-box {
+  font-family: "Overpass", sans-serif;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 390px;
+  height: 344px;
+}
+.icon {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -12%);
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+}

@@ -10,14 +10,15 @@
     h2 {
       font-size: 78px;
       font-weight: 800;
-      font-family: "Syne", sans-serif;
     }
     p {
       font-size: 22px;
       font-weight: 400;
-      font-family: "Overpass", sans-serif;
     }
   }
+}
+h2:hover {
+  color: $hightlight;
 }
 .project {
   width: 100%;
