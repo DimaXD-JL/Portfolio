@@ -1,7 +1,7 @@
 <header>
   <div class="header-content">
     <div class="logo-box">
-      <img src="/assets/img/A-Photoroom.png" alt="logo" />
+      <img src="/assets/img/logo-black.png" alt="logo" />
     </div>
     <div class="language-switch">
       <div class="drop-down">
@@ -15,44 +15,25 @@
       </div>
 
       <nav>
-        <svg
-          width="44"
-          height="38"
-          viewBox="0 0 44 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          [ngClass]="{ toggle: isToggled }"
+        <div
+          class="hamburger"
           (click)="toggleMenu()"
-        >
-          <path
-            class="line"
-            d="M2 2H42"
-            stroke="black"
-            stroke-width="4"
-            stroke-linecap="square"
-          />
-          <path
-            class="line"
-            d="M2 19H42"
-            stroke="black"
-            stroke-width="4"
-            stroke-linecap="square"
-          />
-          <path
-            class="line"
-            d="M2 36H42"
-            stroke="black"
-            stroke-width="4"
-            stroke-linecap="square"
-          />
-        </svg>
-
-        <div class="overlay" [ngClass]="{ show: isToggled }">
+          [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
+        ></div>
+        <div class="overlay" [ngClass]="{ show: !isToggle }">
           <div class="overlay-content">
-            <a href="#link1">Link 1</a>
-            <a href="#link2">Link 2</a>
-            <a href="#link3">Link 3</a>
-            <a href="#link4">Link 4</a>
+            <div class="border">
+              <a href="#link1">About me</a>
+            </div>
+            <div class="border">
+              <a href="#link2">My skills</a>
+            </div>
+            <div class="border">
+              <a href="#link3">Portfolio</a>
+            </div>
+            <div class="border">
+              <a href="#link1">Kontakt</a>
+            </div>
           </div>
         </div>
       </nav>

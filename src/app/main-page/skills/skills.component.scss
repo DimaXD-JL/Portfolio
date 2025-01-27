@@ -12,9 +12,9 @@ h2 {
   color: $primary;
   background-color: $secondary;
 
-  // &:hover {
-  //   color: $hightlight;
-  // }
+  > h2:hover {
+    color: $hightlight;
+  }
 }
 h2:hover {
   color: $hightlight;
@@ -47,8 +47,11 @@ h2:hover {
     height: 104px;
   }
   > p {
+    font-weight: 700;
+    font-size: 16px;
     &:hover {
       color: $hightlight;
+      font-weight: 700;
     }
   }
 }
@@ -64,6 +67,9 @@ h2:hover {
 
   a {
     text-decoration: none;
+    color: $hightlight;
+  }
+  > img &:hover {
     color: $hightlight;
   }
 }

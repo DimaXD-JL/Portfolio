@@ -4,15 +4,14 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule,],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  isToggle = true;
 
-  isToggled = false;
-
-  toggleMenu(): void {
-    this.isToggled = !this.isToggled;
+  toggleMenu() {
+    this.isToggle = !this.isToggle;
   }
 }

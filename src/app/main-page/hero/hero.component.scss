@@ -1,21 +1,20 @@
 @import "../../../styles.scss";
 
 .hero {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  margin-top: 60px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 90px;
 }
 
 .hero-content {
-  position: relative;
-  height: 100vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // flex-wrap: wrap;
+  justify-content: center;
   margin-top: 60px;
 
   > h1 {
@@ -27,22 +26,9 @@
     padding: 20px;
   }
 }
-.hero-info {
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  margin-top: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem
-    clamp(2rem, 13.333vw - 6rem, 6rem);
-}
+
 .sub-name {
   display: flex;
-
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -50,12 +36,23 @@
   gap: 20px;
 
   > p {
-    font-size: clamp(12px, 2vw, 30px);
+    font-size: clamp(12px, 10vw, 48px);
     color: #00bc8f;
+    font-weight: 700;
   }
   > img {
     width: 50%;
   }
+}
+.hero-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+  padding: 100px;
+  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem
+  //   clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .hero-mail {
   font-family: "Overpass", sans-serif;

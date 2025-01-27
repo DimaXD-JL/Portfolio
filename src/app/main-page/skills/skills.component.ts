@@ -47,5 +47,9 @@ export class SkillsComponent {
       name: 'TypeScript',
       img: 'TypeScript.png',
     },
+    {
+      name: 'Boostrap',
+      img: 'Bootstrap.png',
+    },
   ];
 }

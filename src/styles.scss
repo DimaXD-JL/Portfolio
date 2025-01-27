@@ -12,8 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   // max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
   background-image: url("./assets/img/Background Pattern.svg");
   background-color: $secondary;
 }

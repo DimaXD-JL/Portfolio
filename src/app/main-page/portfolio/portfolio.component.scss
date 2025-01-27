@@ -25,18 +25,18 @@ h2:hover {
   padding: 50px;
   display: flex;
   gap: 30px;
-  > img {
-    width: 50%;
-    height: 50%;
-  }
 }
 .project-box {
-  // width: 100%;
-  max-width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 100px;
   margin-bottom: 100px;
+  > img {
+    width: 50%;
+    height: 50%;
+    filter: grayscale(100%);
+  }
 }
 .reversed-layout {
   flex-direction: row-reverse; /* Bild rechts, Text links */
