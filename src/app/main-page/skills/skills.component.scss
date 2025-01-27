@@ -42,17 +42,56 @@ h2:hover {
   font-size: 16px;
   font-weight: 600;
   font-family: "Overpass", sans-serif;
+
   > img {
     width: 100px;
     height: 104px;
+    transition: transform 0.27s linear; // Optional für glattere Übergänge
   }
+
   > p {
     font-weight: 700;
     font-size: 16px;
+
     &:hover {
       color: $hightlight;
       font-weight: 700;
     }
+  }
+
+  // Animation auf das img bei Hover der gesamten Box
+  &:hover > img {
+    animation: circleAnimation 0.5s forwards linear;
+  }
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: translate(0) scale(1);
+  }
+  12% {
+    transform: translate(25px) scale(0.9);
+  }
+  25% {
+    transform: translate(50px) scale(0.8);
+  }
+  37% {
+    transform: translate(25px) scale(0.6);
+  }
+  50% {
+    transform: translate(0) scale(0.4);
+  }
+  62% {
+    transform: translate(-25px) scale(0.6);
+  }
+  75% {
+    transform: translate(-50px) scale(0.8);
+  }
+  87% {
+    transform: translate(-25px) scale(0.9);
+  }
+  100% {
+    transform: translate(0) scale(1);
   }
 }
 .new-skills {
@@ -69,8 +108,8 @@ h2:hover {
     text-decoration: none;
     color: $hightlight;
   }
-  > img &:hover {
-    color: $hightlight;
+  &:hover > img {
+    animation: circleAnimation 0.5s forwards linear;
   }
 }
 .arrow {

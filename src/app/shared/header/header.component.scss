@@ -81,7 +81,7 @@ header {
 }
 .hamburger {
   width: 80px;
-  height: 80px;
+  height: 50px;
 
   background-image: url("/assets/img/hamburger/hamburger1.png");
   background-repeat: no-repeat;
@@ -194,22 +194,54 @@ header {
   transition: none;
   animation: none;
 }
-
 .border:hover::before {
-  animation: expand-and-move 0.5s ease-out forwards;
+  animation: expand-and-border 1s ease-out forwards;
 }
 
-@keyframes expand-and-move {
+@keyframes expand-and-border {
   0% {
     width: 0;
-    height: 30%;
+    height: 30%; /* Quadrat wird links gestartet */
   }
-  // 30% {
-  //   width: 0;
-  //   height: 30%; /* Quadrat wird links aufgebaut */
-  // }
-  100% {
+  30% {
+    width: 0;
+    height: 30%; /* Quadrat bleibt */
+  }
+  60% {
     width: 100%; /* Linie bewegt sich nach rechts */
     height: 30%;
   }
+  70% {
+    width: 100%; /* Linie bleibt rechts */
+    height: 30%;
+  }
+  90% {
+    width: 100%; /* Linie bleibt rechts */
+    height: 100%; /* Linie wächst nach oben */
+  }
+  100% {
+    width: 100%; /* Komplettes Element umrandet */
+    height: 100%;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+  }
 }
+
+// .border:hover::before {
+//   animation: expand-and-move 0.5s ease-out forwards;
+// }
+
+// @keyframes expand-and-move {
+//   0% {
+//     width: 0;
+//     height: 30%;
+//   }
+//   30% {
+//     width: 0;
+//     height: 30%; /* Quadrat wird links aufgebaut */
+//   }
+//   100% {
+//     width: 100%; /* Linie bewegt sich nach rechts */
+//     height: 30%;
+//   }
+// }
