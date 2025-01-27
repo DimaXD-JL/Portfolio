@@ -21,10 +21,11 @@
   // flex-wrap: wrap;
 }
 .portre {
-  width: 100%;
+  width: 50%;
+  height: auto;
   background-image: url("../../../assets/img/profil-bild.jpg");
   background-size: contain;
-  background-position: center;
+  // background-position: center;
   background-repeat: no-repeat;
   // &::after {
   //   content: "";
