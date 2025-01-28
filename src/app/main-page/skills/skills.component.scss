@@ -46,22 +46,21 @@ h2:hover {
   > img {
     width: 100px;
     height: 104px;
-    transition: transform 0.27s linear; // Optional für glattere Übergänge
+    transition: transform 0.27s linear;
   }
 
   > p {
     font-weight: 700;
     font-size: 16px;
-
-    &:hover {
-      color: $hightlight;
-      font-weight: 700;
-    }
   }
 
-  // Animation auf das img bei Hover der gesamten Box
-  &:hover > img {
-    animation: circleAnimation 0.5s forwards linear;
+  &:hover {
+    > p {
+      color: $hightlight;
+    }
+    > img {
+      animation: circleAnimation 0.5s forwards linear;
+    }
   }
 }
 
@@ -101,17 +100,41 @@ h2:hover {
   gap: 20px;
   margin: 35px;
   font-size: clamp(12px, 5vw, 22px);
-  // font-size: 22px;
   font-family: "Overpass", sans-serif;
-
   a {
     text-decoration: none;
     color: $hightlight;
-  }
-  &:hover > img {
-    animation: circleAnimation 0.5s forwards linear;
+    position: relative; // WICHTIG für das Pseudo-Element
+    display: inline-block; // Stellt sicher, dass die Animation korrekt funktioniert
   }
 }
+.new-skills img:hover {
+  animation: circleAnimation 0.5s forwards linear;
+}
+////////////////////////// Pseudo-Element border link //////////////////////////
+.new-skills a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: $hightlight;
+  transition: width 1s ease-in-out;
+}
+.new-skills a:hover::before {
+  animation: expand-and-border 0.2s ease-out forwards;
+}
+@keyframes expand-and-border {
+  100% {
+    width: 45%; /* Begrenzt den Border auf die rechte Seite */
+    transform: translateX(65px); /* Bewegt den Rest nach rechts */
+  }
+}
+.new-skills a:hover {
+  font-weight: 700; /* Schrift wird beim Hover fett */
+}
+
 .arrow {
   padding: 50px;
   width: 100%;
