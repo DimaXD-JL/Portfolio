@@ -18,33 +18,38 @@
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
+  p {
+    text-align: justify;
+  }
 }
+
 .portre {
   width: 50%;
   height: auto;
   background-image: url("../../../assets/img/profil-bild.jpg");
   background-size: contain;
   // background-position: center;
+  position: relative;
   background-repeat: no-repeat;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%; /* Passt den Rahmen an die Größe des Bildes an */
-  //   height: 100%;
-  //   border: 4px solid #000;
-  //   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  //   transform: translate(10px, 10px);
-  //   opacity: 0;
-  //   z-index: 1; /* Bringt den Rahmen über das Bild */
-  //   transition: all 0.3s ease;
-  // }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px; /* Passt den Rahmen an die Größe des Bildes an */
+    height: 600px;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translate(10px, 10px);
+    opacity: 0;
+    z-index: 1; /* Bringt den Rahmen über das Bild */
+    transition: all 0.3s ease;
+  }
 
-  // &:hover::after {
-  //   opacity: 1;
-  // }
+  &:hover::before {
+    opacity: 1;
+  }
 }
 
 h2 {

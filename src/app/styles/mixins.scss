@@ -1,4 +1,4 @@
-@mixin dFlex($jc: center, $ai: center, $fd: column, $g: 1rem) {
+@mixin dFlex($df: flex, $jc: center, $ai: center, $fd: column, $g: 1rem) {
   display: flex;
   justify-content: $jc;
   flex-direction: $fd;

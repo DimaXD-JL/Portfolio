@@ -8,7 +8,7 @@
   > div {
     @include dFlex();
     h2 {
-      font-size: 78px;
+      font-size: clamp(20px, 5vw, 78px);
       font-weight: 800;
     }
     p {
@@ -45,12 +45,11 @@ h2:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  > h3 {
-    font-size: 45px;
-  }
-  > p {
+  p {
     color: $hightlight;
-    font-size: 23px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
   }
 }
 .btn {
