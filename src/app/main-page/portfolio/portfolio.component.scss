@@ -2,6 +2,7 @@
 
 .portfolio-section {
   width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -18,7 +19,7 @@
   }
 }
 h2:hover {
-  color: $hightlight;
+  color: $highlight;
 }
 .project {
   width: 100%;
@@ -46,7 +47,7 @@ h2:hover {
   display: flex;
   flex-direction: column;
   p {
-    color: $hightlight;
+    color: $highlight;
     font-size: 22px;
     font-weight: 400;
     text-align: justify;

@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1440px;
 }
 
 .header-content {
@@ -70,7 +71,7 @@ header {
     display: block;
     text-align: center;
     &:hover {
-      background-color: $hightlight;
+      background-color: $highlight;
       border-radius: 20%;
       min-width: 20px;
     }
@@ -142,15 +143,16 @@ header {
 }
 
 .overlay {
+  display: none; // Erst verstecken
+  flex-direction: column;
+  // justify-content: center;
+  z-index: 100; // Sicherstellen, dass Overlay über anderen Elementen liegt
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
-  width: 100%;
-  margin-top: 5%;
+  right: 0; // Sicherstellen, dass volle Breite genutzt wird
+  height: 100vh; // Ganze Bildschirmhöhe
   background: $secondary;
-  display: none;
-  justify-content: center;
-  z-index: 10;
 }
 
 .overlay.show {
@@ -158,25 +160,25 @@ header {
 }
 
 .overlay-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  // height: 95vh;
 }
 
 .overlay-content a {
   display: block;
-  margin: 10px;
+  // margin: 10px;
   color: $primary;
-  font-size: 96px;
+  font-size: clamp(12px, 2vw, 40px);
   font-weight: 700;
   font-family: "Syne", sans-serif;
 }
 .border {
-  height: 170px;
-  width: 580px;
+  height: 120px;
+  width: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,8 +194,8 @@ header {
   left: 0;
   border-bottom: 4px solid black;
   border-left: 4px solid black;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   transition: none;
   animation: none;
 }
@@ -225,4 +227,19 @@ header {
     border-left: none;
     transform: translateX(calc(400px)); /* Bewegt den Rest nach rechts */
   }
+}
+.overlay-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3%;
+  width: 100%;
+  height: 300px;
+  flex-grow: 1;
+  color: white;
+  background-color: #1b1819;
+  clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+}
+.overlay-sozial {
+  display: flex;
 }

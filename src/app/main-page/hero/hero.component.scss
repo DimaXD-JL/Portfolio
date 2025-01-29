@@ -2,6 +2,7 @@
 
 .hero {
   width: 100%;
+  max-width: 1440px;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -49,6 +50,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  max-width: 1440px;
   height: 50%;
   padding: 100px;
   // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem

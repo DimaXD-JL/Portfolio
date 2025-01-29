@@ -1,13 +1,26 @@
 @import "../../../styles.scss";
 
-h2 {
-  font-size: 78px;
-}
+// h2 {
+//   font-size: 78px;
+// }
 .reference-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
+  max-width: 1440px;
+  gap: 20px; // Fügt Abstand zwischen den Elementen hinzu
+
+  h2 {
+    font-size: clamp(20px, 5vw, 78px);
+    font-weight: 800;
+    transition: color 0.3s ease-in-out; // Weiche Farbänderung
+  }
+
+  h2:hover {
+    color: $highlight; // Korrigierter Variablenname (fehlte ein "h")
+  }
 }
 
 .reference {
@@ -45,9 +58,9 @@ p {
   color: black;
 }
 .reference-box:hover {
-  border-color: $hightlight;
+  border-color: $highlight;
   > .icon {
-    color: $hightlight;
+    color: $highlight;
   }
 }
 .arrow {

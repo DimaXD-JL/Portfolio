@@ -1,8 +1,7 @@
 @import "../../../styles.scss";
 .about-section {
-  // position: relative;
   width: 100%;
-
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -15,7 +14,6 @@
 }
 .about-content {
   padding: 50px;
-  max-width: 1448px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
@@ -60,7 +58,7 @@ h2 {
   font-weight: 800;
 }
 h2:hover {
-  color: $hightlight;
+  color: $highlight;
 }
 
 .title {
@@ -98,8 +96,7 @@ h2:hover {
 .arrow {
   padding: 50px;
   width: 100%;
-  // max-width: 1448px;
+  max-width: 1448px;
   display: flex;
-  // box-sizing: border-box;
   justify-content: end;
 }

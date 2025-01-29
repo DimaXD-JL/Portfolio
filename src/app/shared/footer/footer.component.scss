@@ -52,7 +52,7 @@ p {
     cursor: pointer;
     transition: transform 0.3s ease;
     &:hover {
-      color: #00bc8f;
+      color: $highlight;
       transform: translateY(-10px);
     }
   }

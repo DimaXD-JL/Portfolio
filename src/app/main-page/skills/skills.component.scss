@@ -13,15 +13,16 @@ h2 {
   background-color: $secondary;
 
   > h2:hover {
-    color: $hightlight;
+    color: $highlight;
   }
 }
 h2:hover {
-  color: $hightlight;
+  color: $highlight;
 }
 
 .skills-section {
   width: 100%;
+  max-width: 1440px;
   padding: 50px;
 }
 .skills-wrapper {
@@ -31,6 +32,7 @@ h2:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 5%;
   gap: 120px;
 }
 .icon-box {
@@ -56,7 +58,7 @@ h2:hover {
 
   &:hover {
     > p {
-      color: $hightlight;
+      color: $highlight;
     }
     > img {
       animation: circleAnimation 0.5s forwards linear;
@@ -103,9 +105,9 @@ h2:hover {
   font-family: "Overpass", sans-serif;
   a {
     text-decoration: none;
-    color: $hightlight;
-    position: relative; // WICHTIG für das Pseudo-Element
-    display: inline-block; // Stellt sicher, dass die Animation korrekt funktioniert
+    color: $highlight;
+    position: relative;
+    display: inline-block;
   }
 }
 .new-skills img:hover {
@@ -119,7 +121,7 @@ h2:hover {
   left: 0;
   width: 0;
   height: 2.5px;
-  background-color: $hightlight;
+  background-color: $highlight;
   transition: width 1s ease-in-out;
 }
 .new-skills a:hover::before {
@@ -127,18 +129,16 @@ h2:hover {
 }
 @keyframes expand-and-border {
   100% {
-    width: 45%; /* Begrenzt den Border auf die rechte Seite */
-    transform: translateX(65px); /* Bewegt den Rest nach rechts */
+    width: 45%;
+    transform: translateX(65px);
   }
 }
 .new-skills a:hover {
-  font-weight: 700; /* Schrift wird beim Hover fett */
+  font-weight: 700;
 }
 
 .arrow {
   padding: 50px;
   width: 100%;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: start;
+  max-width: 1440px;
 }
