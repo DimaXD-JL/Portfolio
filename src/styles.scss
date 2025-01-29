@@ -1,23 +1,25 @@
 @import "./app/styles/variablen.scss";
 @import "./app/styles/fonts.scss";
 @import "./app/styles/mixins.scss";
-
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url("./assets/img/Background Pattern.svg");
+  background-color: $secondary;
+}
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: #00bc8f #dddddd00;
   scroll-behavior: smooth;
+  // margin: 0;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  // max-width: 1440px;
-  margin: 0;
-  background-image: url("./assets/img/Background Pattern.svg");
-  background-color: $secondary;
-}
+
 p {
   font-family: "Overpass";
 }

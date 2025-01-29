@@ -2,6 +2,7 @@
 .about-section {
   // position: relative;
   width: 100%;
+
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -24,9 +25,9 @@
   }
 }
 
-.portre {
-  width: 50%;
-  height: auto;
+.portrait {
+  width: 533px;
+  height: 533px;
   background-image: url("../../../assets/img/profil-bild.jpg");
   background-size: contain;
   // background-position: center;
@@ -37,11 +38,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 600px; /* Passt den Rahmen an die Größe des Bildes an */
-    height: 600px;
+    width: 101%; /* Passt den Rahmen an die Größe des Bildes an */
+    height: 101%;
     border: 4px solid #000;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    transform: translate(10px, 10px);
+    transform: translate(12px, 12px);
     opacity: 0;
     z-index: 1; /* Bringt den Rahmen über das Bild */
     transition: all 0.3s ease;
