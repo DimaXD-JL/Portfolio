@@ -1,8 +1,5 @@
 @import "../../../styles.scss";
 
-// h2 {
-//   font-size: 78px;
-// }
 .reference-section {
   display: flex;
   flex-direction: column;
@@ -40,13 +37,22 @@
   width: 390px;
   height: 344px;
 
-  > h3 {
+  h3 {
     font-size: 22px;
     margin: 0;
   }
-}
-p {
-  margin: 16px;
+
+  p {
+    margin: 16px;
+  }
+
+  &:hover {
+    border-color: $highlight;
+
+    .icon {
+      color: $highlight;
+    }
+  }
 }
 
 .icon {
@@ -56,12 +62,6 @@ p {
   font-size: 60px;
   font-weight: 800;
   color: black;
-}
-.reference-box:hover {
-  border-color: $highlight;
-  > .icon {
-    color: $highlight;
-  }
 }
 .arrow {
   padding: 50px;

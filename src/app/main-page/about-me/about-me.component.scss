@@ -24,10 +24,11 @@
 }
 
 .portrait {
-  width: 533px;
-  height: 533px;
+  width: 450px;
+  height: 450px;
   background-image: url("../../../assets/img/profil-bild.jpg");
   background-size: contain;
+  object-fit: cover;
   // background-position: center;
   position: relative;
   background-repeat: no-repeat;

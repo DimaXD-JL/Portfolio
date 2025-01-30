@@ -5,7 +5,7 @@
 
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <label for="name">Name</label>
+      <label for="name"></label>
       <input
         [(ngModel)]="contactData.name"
         type="text"
@@ -15,23 +15,23 @@
         required
       />
 
-      <label for="email">Email</label>
+      <label for="email"></label>
       <input
         [(ngModel)]="contactData.email"
         type="email"
         id="email"
         name="email"
-        placeholder="Your last name.."
+        placeholder="Your email"
         required
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
 
-      <label for="message">Subject</label>
+      <label for="message"></label>
       <textarea
         [(ngModel)]="contactData.message"
         id="message"
         name="massage"
-        placeholder="Write something.."
+        placeholder="Your message"
         required
       >
       style="height: 200px"
