@@ -1,37 +1,44 @@
 <div class="container">
-  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <label for="name">Name</label>
-    <input
-      [(ngModel)]="contactData.name"
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Your name.."
-      required
-    />
+  <h2>Say Hi!</h2>
+  <p>Want to discuss a new project?</p>
+  <p>say hello! let's discuss you ideas and make it happen</p>
 
-    <label for="email">Email</label>
-    <input
-      [(ngModel)]="contactData.email"
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Your last name.."
-      required
-      pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-    />
+  <div class="contact-form">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <label for="name">Name</label>
+      <input
+        [(ngModel)]="contactData.name"
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name.."
+        required
+      />
 
-    <label for="message">Subject</label>
-    <textarea
-      [(ngModel)]="contactData.message"
-      id="message"
-      name="massage"
-      placeholder="Write something.."
-      required
-    >
+      <label for="email">Email</label>
+      <input
+        [(ngModel)]="contactData.email"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your last name.."
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+
+      <label for="message">Subject</label>
+      <textarea
+        [(ngModel)]="contactData.message"
+        id="message"
+        name="massage"
+        placeholder="Write something.."
+        required
+      >
       style="height: 200px"
-    </textarea>
+    </textarea
+      >
 
-    <input type="submit" value="Submit" />
-  </form>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
 </div>
