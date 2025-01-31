@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 1440px;
   gap: 20px; // Fügt Abstand zwischen den Elementen hinzu
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 
   h2 {
     font-size: clamp(20px, 5vw, 78px);
@@ -22,7 +23,6 @@
 
 .reference {
   width: 100%;
-  padding: 50px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
@@ -44,6 +44,7 @@
 
   p {
     margin: 16px;
+    font-size: clamp(16px, 1vw, 24px);
   }
 
   &:hover {

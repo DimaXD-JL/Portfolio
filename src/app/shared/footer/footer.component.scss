@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 40px;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
   // max-width: 1440px;
 }
 .footer-left {

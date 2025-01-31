@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent {
-  project = [
+  projects = [
     {
       name: 'Join',
       languages: 'Angular | TypeScript | HTML | CSS | Firebase',
@@ -44,4 +44,8 @@ export class PortfolioComponent {
       link: '',
     },
   ];
+
+  reverseClass(index: number): string {
+    return index % 2 !== 0 ? 'reverse' : '';
+  }
 }

@@ -28,6 +28,9 @@
 
       <label for="message"></label>
       <textarea
+        #message="ngModel"
+        minlength="4"
+        maxlength="1000"
         [(ngModel)]="contactData.message"
         id="message"
         name="massage"
@@ -37,8 +40,20 @@
       style="height: 200px"
     </textarea
       >
-
-      <input type="submit" value="Submit" />
+      @if (!message.valid && message.touched){
+      <p>please enter a valid email</p>
+      }
+      <div class="checkbox">
+        <input type="checkbox" value="" />
+        <label for="send"
+          >I've read the <a href="">Privacy policy</a> and agree to the
+          processing of my data as outlined.</label
+        >
+      </div>
+      <div class="button-container">
+        <input type="submit" value="Send message" />
+        <a href=""><img src="assets/img/arrow-scolup.png" alt="" /></a>
+      </div>
     </form>
   </div>
 </div>

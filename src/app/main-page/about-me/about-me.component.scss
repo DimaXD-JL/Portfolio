@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .about {
   display: flex;
@@ -13,11 +14,11 @@
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .about-content {
-  padding: 50px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 20px;
   p {
     text-align: justify;
   }
@@ -53,7 +54,6 @@
 }
 
 h2 {
-  margin-left: 5%;
   font-family: "Syne", sans-serif;
   font-size: clamp(15px, 5vw, 98px);
   font-weight: 800;
@@ -69,7 +69,6 @@ h2:hover {
   align-items: left;
   gap: 50px;
   width: 50%;
-  padding-right: 50px;
   > span {
     display: flex;
     align-items: center;
@@ -95,9 +94,9 @@ h2:hover {
   font-weight: bold;
 }
 .arrow {
-  padding: 50px;
   width: 100%;
   max-width: 1448px;
   display: flex;
   justify-content: end;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }

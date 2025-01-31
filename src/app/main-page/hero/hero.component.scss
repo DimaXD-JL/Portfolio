@@ -8,6 +8,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 90px;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 
 .hero-content {
@@ -19,7 +20,7 @@
   margin-top: 60px;
 
   > h1 {
-    font-size: clamp(30px, 10vw, 128px);
+    font-size: clamp(24px, 8vw, 96px);
     font-weight: 800;
     margin: 0;
     line-height: 100%;
@@ -32,17 +33,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 20px;
   gap: 20px;
 
   > p {
-    font-size: clamp(12px, 10vw, 48px);
+    font-size: clamp(14px, 2vw, 36px);
     color: #00bc8f;
     font-weight: 700;
   }
   > img {
-    width: 50%;
+    width: clamp(100px, 40%, 300px); /* Mindest- und Maximalgröße */
+    max-width: 100%;
+    height: auto;
   }
 }
 .hero-info {
@@ -51,14 +53,13 @@
   align-items: flex-end;
   width: 100%;
   max-width: 1440px;
-  height: 50%;
-  padding: 100px;
-  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem) 1rem
-  //   clamp(2rem, 13.333vw - 6rem, 6rem);
+  padding: 4%;
+  // min-height: 100px;
+  // max-height: 400px;
 }
 .hero-mail {
   font-family: "Overpass", sans-serif;
-  font-size: 22px;
+  font-size: clamp(12px, 5vw, 22px);
   font-weight: 800;
   color: $primary;
   text-decoration: none;
@@ -71,46 +72,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
   > p {
     font-weight: bold;
   }
 }
 
-.arrow-svg {
-  animation: arrowMove 1.5s infinite; /* Animation wird auf das gesamte SVG angewendet */
-  transition: transform 1s ease;
-}
+// .arrow-svg {
+//   animation: arrowMove 1.5s infinite; /* Animation wird auf das gesamte SVG angewendet */
+//   transition: transform 1s ease;
+// }
 
-.arrow-path {
-  animation: arrowPathMove 2s infinite; /* Animation für den Pfeil */
-  transition: transform 0.5s ease;
-}
+// .arrow-path {
+//   animation: arrowPathMove 2s infinite; /* Animation für den Pfeil */
+//   transition: transform 0.5s ease;
+// }
 
 /* Keyframes für die Animation des Pfeils */
-@keyframes arrowMove {
-  0% {
-    transform: translateY(-80px); /* Anfangsposition */
-  }
-  50% {
-    transform: translateY(10px); /* Pfeil nach unten bewegen */
-  }
-  100% {
-    transform: translateY(0); /* Zurück zum Ausgangspunkt */
-  }
-}
+// @keyframes arrowMove {
+//   0% {
+//     transform: translateY(-80px); /* Anfangsposition */
+//   }
+//   50% {
+//     transform: translateY(10px); /* Pfeil nach unten bewegen */
+//   }
+//   100% {
+//     transform: translateY(0); /* Zurück zum Ausgangspunkt */
+//   }
+// }
 
-/* Keyframes für die Animation der Pfeilform */
-@keyframes arrowPathMove {
-  0% {
-    transform: translateY(0); /* Anfangsposition */
-  }
-  50% {
-    transform: translateY(
-      10px
-    ); /* Pfeil ein kleines Stück nach unten verschieben */
-  }
-  100% {
-    transform: translateY(0); /* Zurück zum Ausgangspunkt */
-  }
-}
+// /* Keyframes für die Animation der Pfeilform */
+// @keyframes arrowPathMove {
+//   0% {
+//     transform: translateY(0); /* Anfangsposition */
+//   }
+//   50% {
+//     transform: translateY(
+//       10px
+//     ); /* Pfeil ein kleines Stück nach unten verschieben */
+//   }
+//   100% {
+//     transform: translateY(0); /* Zurück zum Ausgangspunkt */
+//   }
+// }

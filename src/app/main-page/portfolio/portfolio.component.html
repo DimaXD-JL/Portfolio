@@ -7,14 +7,14 @@
     </p>
   </div>
   <div class="project">
-    @for(project of project; track project.name; let index = $index) {
-    <div class="project-box">
+    @for(project of projects; track project.name; let index = $index) {
+    <div class="project-box" [ngClass]="reverseClass(index)">
       <img
         src="/assets/img/projects/{{ project.img }}"
         alt="{{ project.name }}"
       />
-      <!-- <p>{{ project.index }}</p> -->
       <div class="project-info">
+        <div class="count">{{ index + 1 }}/{{ projects.length }}</div>
         <h2>{{ project.name }}</h2>
         <p>{{ project.languages }}</p>
         <span>{{ project.description }}</span>
