@@ -1,8 +1,9 @@
 <div class="container">
-  <h2>Say Hi!</h2>
-  <p>Want to discuss a new project?</p>
-  <p>say hello! let's discuss you ideas and make it happen</p>
-
+  <div class="contact-info">
+    <h2>Say Hi!</h2>
+    <p>Want to discuss a new project?</p>
+    <p>say hello! let's discuss you ideas and make it happen</p>
+  </div>
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <label for="name"></label>
@@ -52,7 +53,9 @@
       </div>
       <div class="button-container">
         <input type="submit" value="Send message" />
-        <a href=""><img src="assets/img/arrow-scolup.png" alt="" /></a>
+        <div class="arrow-up">
+          <a href=""><img src="assets/img/arrow-scolup.png" alt="" /></a>
+        </div>
       </div>
     </form>
   </div>

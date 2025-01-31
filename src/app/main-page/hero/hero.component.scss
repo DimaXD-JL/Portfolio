@@ -73,45 +73,28 @@
   justify-content: center;
   align-items: center;
   gap: 2px;
+  position: relative; // Wichtig für das Positionieren des Pfeils
+
+  > div {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+  }
+
+  > div > img {
+    animation: scroll-down 2s linear infinite;
+  }
+
   > p {
     font-weight: bold;
   }
 }
 
-// .arrow-svg {
-//   animation: arrowMove 1.5s infinite; /* Animation wird auf das gesamte SVG angewendet */
-//   transition: transform 1s ease;
-// }
-
-// .arrow-path {
-//   animation: arrowPathMove 2s infinite; /* Animation für den Pfeil */
-//   transition: transform 0.5s ease;
-// }
-
-/* Keyframes für die Animation des Pfeils */
-// @keyframes arrowMove {
-//   0% {
-//     transform: translateY(-80px); /* Anfangsposition */
-//   }
-//   50% {
-//     transform: translateY(10px); /* Pfeil nach unten bewegen */
-//   }
-//   100% {
-//     transform: translateY(0); /* Zurück zum Ausgangspunkt */
-//   }
-// }
-
-// /* Keyframes für die Animation der Pfeilform */
-// @keyframes arrowPathMove {
-//   0% {
-//     transform: translateY(0); /* Anfangsposition */
-//   }
-//   50% {
-//     transform: translateY(
-//       10px
-//     ); /* Pfeil ein kleines Stück nach unten verschieben */
-//   }
-//   100% {
-//     transform: translateY(0); /* Zurück zum Ausgangspunkt */
-//   }
-// }
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
