@@ -1,7 +1,6 @@
 @import "../../../styles.scss";
 
 header {
-  // @include dFlex($df: flex, $jc: center);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -9,12 +8,12 @@ header {
 }
 
 .header-content {
-  position: fixed;
-  top: 0;
-  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   width: 1440px;
   max-width: 100%;
   height: 92px;
@@ -33,13 +32,13 @@ header {
 }
 .language-switch {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
   cursor: pointer;
 }
 .drop-btn {
   background-color: transparent;
-  // font-family: "Overpass", sans-serif;
+
   border: none;
   cursor: pointer;
   margin-left: 10%;

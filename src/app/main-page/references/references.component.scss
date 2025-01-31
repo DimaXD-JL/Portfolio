@@ -1,34 +1,33 @@
 @import "../../../styles.scss";
 
 .reference-section {
-  display: flex;
+  @include dFlex($jc: none);
   flex-direction: column;
-  align-items: center;
   text-align: center;
   width: 100%;
   max-width: 1440px;
-  gap: 20px; // Fügt Abstand zwischen den Elementen hinzu
+  gap: 20px;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 
   h2 {
     font-size: clamp(20px, 5vw, 78px);
     font-weight: 800;
-    transition: color 0.3s ease-in-out; // Weiche Farbänderung
-  }
+    transition: color 0.3s ease-in-out;
 
-  h2:hover {
-    color: $highlight; // Korrigierter Variablenname (fehlte ein "h")
+    &:hover {
+      color: $highlight;
+    }
   }
 }
 
 .reference {
   width: 100%;
   display: flex;
-  box-sizing: border-box;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .reference-box {
   font-family: "Overpass", sans-serif;
   border: 4px solid black;
@@ -59,15 +58,14 @@
 .icon {
   position: relative;
   left: 50%;
-  transform: translate(-50%, -12%);
+  transform: translateX(-50%);
   font-size: 60px;
   font-weight: 800;
   color: black;
 }
+
 .arrow {
   padding: 50px;
-  // max-width: 1448px;
   display: flex;
-  box-sizing: border-box;
-  justify-content: end;
+  justify-content: flex-end;
 }

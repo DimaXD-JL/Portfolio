@@ -1,5 +1,5 @@
 <section class="portfolio-section">
-  <div>
+  <div class="portfolio-title">
     <h2>Portfolio</h2>
     <p>
       Explore a section of my work here- Interact with projects to see my skills
@@ -9,12 +9,16 @@
   <div class="project">
     @for(project of projects; track project.name; let index = $index) {
     <div class="project-box" [ngClass]="reverseClass(index)">
-      <img
-        src="/assets/img/projects/{{ project.img }}"
-        alt="{{ project.name }}"
-      />
+      <div class="project-border">
+        <img
+          src="/assets/img/projects/{{ project.img }}"
+          alt="{{ project.name }}"
+        />
+      </div>
       <div class="project-info">
-        <div class="count">{{ index + 1 }}/{{ projects.length }}</div>
+        <div class="count" [ngClass]="reverseNumber(index)">
+          0{{ index + 1 }}/0{{ projects.length }}
+        </div>
         <h2>{{ project.name }}</h2>
         <p>{{ project.languages }}</p>
         <span>{{ project.description }}</span>

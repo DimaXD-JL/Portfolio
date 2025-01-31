@@ -48,4 +48,7 @@ export class PortfolioComponent {
   reverseClass(index: number): string {
     return index % 2 !== 0 ? 'reverse' : '';
   }
+  reverseNumber(index: number): string {
+    return index % 2 !== 0 ? 'reverse-number' : '';
+  }
 }
