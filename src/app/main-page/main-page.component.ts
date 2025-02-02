@@ -4,7 +4,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from '../shared/contact/contact.component';
 
 @Component({
   selector: 'app-main-page',

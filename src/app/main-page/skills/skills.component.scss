@@ -19,14 +19,16 @@ h2 {
 h2:hover {
   color: $highlight;
 }
-
 .skills-section {
+  display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 1440px;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .skills-wrapper {
   border: 4px solid $primary;
+  margin-top: 100px;
 }
 .skills {
   display: flex;

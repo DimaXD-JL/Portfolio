@@ -5,14 +5,14 @@
   width: 100%;
   max-width: 1440px;
   height: 100vh;
-  margin-top: 90px;
+  // margin-top: 90px;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 
 .hero-content {
   @include dFlex();
   height: 50%;
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 .hero-content h1 {
