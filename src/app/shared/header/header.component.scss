@@ -14,7 +14,7 @@ header {
   width: 100%;
   max-width: 1440px;
   height: 60px;
-  padding: 15px;
+  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .logo-box {
   display: flex;

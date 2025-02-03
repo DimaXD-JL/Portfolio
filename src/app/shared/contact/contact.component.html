@@ -1,60 +1,96 @@
 <div class="container">
   <div class="contact-info">
     <h2>Say Hi!</h2>
-    <p>Want to discuss a new project?</p>
-    <p>say hello! let's discuss you ideas and make it happen</p>
+    <h3>Want to discuss a new project?</h3>
+    <h4>say hello! let's discuss you ideas and make it happen</h4>
   </div>
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <label for="name"></label>
-      <input
-        [(ngModel)]="contactData.name"
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name.."
-        required
-      />
+      <div class="input-group">
+        <input
+          #name="ngModel"
+          minlength="2"
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          required
+          [ngClass]="{
+            valid: name.valid && name.touched,
+            invalid: !name.valid && name.touched
+          }"
+        />
+        <span>Your name</span>
+      </div>
 
-      <label for="email"></label>
-      <input
-        [(ngModel)]="contactData.email"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Your email"
-        required
-        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-      />
-
-      <label for="message"></label>
-      <textarea
-        #message="ngModel"
-        minlength="4"
-        maxlength="1000"
-        [(ngModel)]="contactData.message"
-        id="message"
-        name="massage"
-        placeholder="Your message"
-        required
-      >
-      style="height: 200px"
-    </textarea
-      >
-      @if (!message.valid && message.touched){
-      <p>please enter a valid email</p>
+      @if (!name.valid && name.touched && !name.disabled) {
+      <p class="error-message">Your name is required</p>
       }
+
+      <div class="input-group">
+        <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          type="email"
+          id="email"
+          name="email"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          [ngClass]="{
+            valid: email.valid && email.touched,
+            invalid: !email.valid && email.touched
+          }"
+        />
+        <span>Your email</span>
+      </div>
+
+      @if (!email.valid && email.touched && !email.disabled) {
+      <p class="error-message">Your email is required</p>
+      }
+
+      <div class="input-group">
+        <textarea
+          #message="ngModel"
+          minlength="4"
+          maxlength="1000"
+          [(ngModel)]="contactData.message"
+          id="message"
+          name="message"
+          required
+          [ngClass]="{
+            valid: message.valid && message.touched,
+            invalid: !message.valid && message.touched
+          }"
+          style="height: 200px"
+        ></textarea>
+        <span>Your message</span>
+
+        @if (!message.valid && message.touched && !message.disabled) {
+        <p class="error-message">Your message is required</p>
+        }
+      </div>
       <div class="checkbox">
-        <input type="checkbox" value="" />
-        <label for="send"
-          >I've read the <a href="">Privacy policy</a> and agree to the
-          processing of my data as outlined.</label
-        >
+        <input
+          type="checkbox"
+          id="privacy"
+          [(ngModel)]="contactData.privacyAccepted"
+          name="privacyAccepted"
+          required
+        />
+        <label for="privacy">
+          I've read the <a href="">Privacy policy</a> and agree to the
+          processing of my data as outlined.
+        </label>
       </div>
       <div class="button-container">
-        <input type="submit" value="Send message" />
+        <button
+          type="submit"
+          [disabled]="!contactForm.valid || !contactData.privacyAccepted"
+        >
+          Submit
+        </button>
         <div class="arrow-up">
-          <a href=""><img src="assets/img/arrow-scolup.png" alt="" /></a>
+          <a href="#hero"><img src="assets/img/arrow-scolup.png" alt="" /></a>
         </div>
       </div>
     </form>
