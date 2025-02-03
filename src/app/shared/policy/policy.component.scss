@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+section {
+  text-align: justify;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+  max-width: 1440px;
+  display: grid;
+  font-size: clamp(12px, 3vw, 20px);
+}
