@@ -5,6 +5,9 @@ import { PolicyComponent } from './shared/policy/policy.component';
 
 export const routes: Routes = [
   { path: '', component: MainPageComponent },
-  { path: 'imprint', component: ImprintComponent },
+  {
+    path: 'imprint',
+    component: ImprintComponent,
+  },
   { path: 'policy', component: PolicyComponent },
 ];

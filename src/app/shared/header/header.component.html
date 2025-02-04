@@ -11,8 +11,8 @@
           <img src="/assets/img/world.png" alt="world.icon" />
         </button>
         <div class="dropdown-content">
-          <a href="#">de</a>
-          <a href="#">eng</a>
+          <button (click)="changeLanguege('de')">De</button>
+          <button (click)="changeLanguege('en')">En</button>
         </div>
       </div>
 
@@ -25,19 +25,19 @@
         <div class="overlay" [ngClass]="{ show: !isToggle }">
           <div class="overlay-content">
             <div class="border">
-              <a href="#about">About me</a>
+              <a href="#about">{{ "header-nav.Aboutme" | translate }}</a>
             </div>
             <div class="border">
-              <a href="#skill">My skills</a>
+              <a href="#skill">{{ "header-nav.MySkills" | translate }}</a>
             </div>
             <div class="border">
-              <a href="#project">Portfolio</a>
+              <a href="#project">{{ "header-nav.Portfolio" | translate }}</a>
             </div>
             <div class="border">
-              <a href="#referenz">Referenz</a>
+              <a href="#referenz">{{ "header-nav.Referenz" | translate }}</a>
             </div>
             <div class="border">
-              <a href="#contact">Contact</a>
+              <a href="#contact">{{ "header-nav.Contact" | translate }}</a>
             </div>
             <div class="overlay-footer">
               <div class="overlay-title">

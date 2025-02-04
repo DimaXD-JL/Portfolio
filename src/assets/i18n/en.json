@@ -1,0 +1,17 @@
+{
+  "header-nav": {
+    "Aboutme": "About me",
+    "MySkills": "My skills",
+    "Portfolio": "Portfolio",
+    "Referenz": "Referenz",
+    "Contact": "Contact"
+  },
+  "hero": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  },
+  "about-me": {
+    "hello": "hello {{value}}",
+    "title": "Translation Demo"
+  }
+}

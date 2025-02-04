@@ -56,13 +56,18 @@ header {
   min-width: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 101;
-  a {
+
+  button {
+    all: unset; // Entfernt alle Standardstile des Buttons
     color: black;
     font-family: "Overpass", sans-serif;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     display: block;
     text-align: center;
+    width: 20px; // Optional: Passt die Breite an, falls gewünscht
+    cursor: pointer; // Fügt die Hand-Interaktion hinzu
+
     &:hover {
       background-color: $highlight;
       border-radius: 20%;
@@ -154,13 +159,15 @@ header {
 .overlay-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 95vh;
+  justify-content: space-around;
+  margin-top: 70px;
+  height: 100%;
 }
 
 .overlay-content a {
+  width: 100%;
   display: block;
   color: $primary;
   font-size: clamp(12px, 2vw, 40px);
@@ -168,20 +175,15 @@ header {
   font-family: "Syne", sans-serif;
 }
 .border {
-  height: 120px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 160px;
   position: relative;
   cursor: pointer;
 }
 
-/* Initiales Styling */
 .border::before {
   content: "";
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   left: 0;
   border-bottom: 4px solid black;
   border-left: 4px solid black;
