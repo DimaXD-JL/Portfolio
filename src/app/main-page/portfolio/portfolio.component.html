@@ -9,13 +9,14 @@
   <div class="project">
     @for(project of projects; track project.name; let index = $index) {
     <div class="project-box" [ngClass]="reverseClass(index)">
-      <div class="project-border">
+      <div class="project-border" [ngClass]="reverseBorder(index)">
         <img
           src="/assets/img/projects/{{ project.img }}"
           alt="{{ project.name }}"
         />
+        <div class="border-icon"></div>
       </div>
-      <div class="project-info">
+      <div class="project-info" [ngClass]="reverseClass(index)">
         <div class="count" [ngClass]="reverseNumber(index)">
           0{{ index + 1 }}/0{{ projects.length }}
         </div>

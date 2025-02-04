@@ -23,7 +23,7 @@
           [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
         ></div>
         <div class="overlay" [ngClass]="{ show: !isToggle }">
-          <div class="overlay-content">
+          <div class="overlay-content" (click)="toggleMenu()">
             <div class="border">
               <a href="#about">{{ "header-nav.Aboutme" | translate }}</a>
             </div>
