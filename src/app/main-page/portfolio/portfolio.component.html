@@ -16,14 +16,17 @@
         />
         <div class="border-icon"></div>
       </div>
-      <div class="project-info" [ngClass]="reverseClass(index)">
+      <div class="project-info">
         <div class="count" [ngClass]="reverseNumber(index)">
           0{{ index + 1 }}/0{{ projects.length }}
         </div>
         <h2>{{ project.name }}</h2>
         <p>{{ project.languages }}</p>
         <span>{{ project.description }}</span>
-        <a class="btn" href="{{ project.link }}">View project</a>
+        <div class="btn-box">
+          <a class="btn" href="{{ project.link }}">Github</a>
+          <a class="btn" href="{{ project.link }}">Live Test</a>
+        </div>
       </div>
     </div>
     }

@@ -1,44 +1,47 @@
 @import "../../../styles.scss";
 
 .footer-box {
-  background-color: $primary;
+  background-color: black;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
   padding: 40px;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
-  // max-width: 1440px;
 }
 .footer-left {
   display: flex;
-  flex-direction: column;
-  > a {
-    color: $secondary;
-  }
+  justify-content: space-between;
+  // > a {
+  //   color: $secondary;
+  // }
 }
-p {
-  color: $secondary;
-  font-size: 22px;
-  font-family: "Overpass", sans-serif;
-}
+// p {
+//   color: $secondary;
+//   font-size: 22px;
+//   font-family: "Overpass", sans-serif;
+// }
 .logo {
   > a img {
     width: 70px;
   }
+  > a img {
+    transition: transform 0.3s ease; /* Smooth Animation */
+    &:hover {
+      transform: translateY(-10px); /* Bewegung nach oben */
+    }
+  }
 }
 
-.footer-right {
+.footer-bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: end;
   gap: 12px;
-  flex-direction: column;
   a {
     color: white;
     font-size: 1.5rem;
     transition: all 0.3s;
     cursor: pointer;
+    font-family: "Overpass", sans-serif;
     &:hover {
       color: $highlight;
     }
@@ -49,9 +52,30 @@ p {
       transform: translateY(-10px); /* Bewegung nach oben */
     }
   }
+  p {
+    color: $secondary;
+    font-size: 22px;
+    font-family: "Overpass", sans-serif;
+  }
 }
 .social {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .footer-left {
+    display: flex;
+
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 }

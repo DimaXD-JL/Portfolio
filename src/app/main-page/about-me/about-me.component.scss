@@ -55,6 +55,7 @@ h2 {
   font-size: clamp(15px, 5vw, 98px);
   font-weight: 800;
   transition: color 0.3s ease;
+  margin-bottom: 20px;
 
   &:hover {
     color: $highlight;

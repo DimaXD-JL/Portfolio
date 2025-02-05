@@ -10,7 +10,7 @@
   flex-direction: column;
 
   h2 {
-    font-size: clamp(20px, 5vw, 78px);
+    font-size: clamp(20px, 5vw, 45px);
     font-weight: 800;
   }
   p {
@@ -25,15 +25,16 @@ h2:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 .project {
   width: 100%;
   padding: 80px;
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 .project-box {
   width: 100%;
@@ -45,6 +46,7 @@ h2:hover {
   display: inline-block;
 
   > img {
+    width: 100%;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
   }
@@ -69,11 +71,11 @@ h2:hover {
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
-
-.project-border:hover::before {
+.project-box:hover .project-border::before,
+.project-box:hover .border-icon,
+.project-box:hover .project-info {
   opacity: 1;
 }
-
 .border-icon {
   position: absolute;
   top: 229px;
@@ -89,13 +91,14 @@ h2:hover {
   z-index: 1;
   transform: rotate(135deg);
 }
-.project-border:hover .border-icon {
+.project-border:hover .border-icon,
+.project-box:hover .border-icon {
   opacity: 1;
   transform: scale(1.8) rotate(0deg);
 }
 
 .project-info {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   margin-left: 25px;
@@ -111,11 +114,10 @@ h2:hover {
   }
 }
 
-.project-border:hover + .project-info {
+.project-box:hover .project-info {
   opacity: 1;
   transform: translateX(0);
 }
-
 .count {
   font-size: 40px;
   color: black;
@@ -124,21 +126,24 @@ h2:hover {
   font-family: "Syne", sans-serif;
   font-weight: 700;
 }
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 .btn {
   border: solid 5px black;
   text-decoration: none;
-  padding: 16px 30px;
+  padding: 15px 20px;
   color: black;
   text-align: center;
   font-size: 23px;
   font-weight: 400;
   cursor: pointer;
-  min-width: 180px;
-  align-self: center;
-  margin: 50px;
+  margin: 20px;
 }
 .btn:hover {
-  padding: 16px 60px;
+  padding: 16px 20px;
   font-weight: bold;
 }
 
@@ -167,6 +172,9 @@ h2:hover {
 
 @media (max-width: 1080px) {
   .project-box {
-    flex-wrap: wrap;
+    display: contents;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
   }
 }
