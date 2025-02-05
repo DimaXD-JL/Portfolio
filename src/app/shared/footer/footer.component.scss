@@ -10,24 +10,8 @@
 .footer-left {
   display: flex;
   justify-content: space-between;
-  // > a {
-  //   color: $secondary;
-  // }
-}
-// p {
-//   color: $secondary;
-//   font-size: 22px;
-//   font-family: "Overpass", sans-serif;
-// }
-.logo {
-  > a img {
+  > .logo img {
     width: 70px;
-  }
-  > a img {
-    transition: transform 0.3s ease; /* Smooth Animation */
-    &:hover {
-      transform: translateY(-10px); /* Bewegung nach oben */
-    }
   }
 }
 
@@ -46,12 +30,6 @@
       color: $highlight;
     }
   }
-  img {
-    transition: transform 0.3s ease; /* Smooth Animation */
-    &:hover {
-      transform: translateY(-10px); /* Bewegung nach oben */
-    }
-  }
   p {
     color: $secondary;
     font-size: 22px;
@@ -62,6 +40,12 @@
   display: flex;
   gap: 12px;
   align-items: center;
+  img {
+    transition: transform 0.3s ease; /* Smooth Animation */
+    &:hover {
+      transform: translateY(-10px); /* Bewegung nach oben */
+    }
+  }
 }
 
 @media (max-width: 500px) {

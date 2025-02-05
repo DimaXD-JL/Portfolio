@@ -8,7 +8,9 @@
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .about {
-  @include dFlex($jc: none);
+  display: flex;
+  justify-content: none;
+  flex-direction: column;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
   margin: 50px 0 110px 0;
 }
@@ -69,6 +71,7 @@ h2 {
   align-items: flex-start;
   gap: 50px;
   width: 50%;
+  padding-right: 32px;
 
   > span {
     display: flex;
