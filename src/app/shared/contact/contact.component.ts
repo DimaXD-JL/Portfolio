@@ -21,15 +21,10 @@ export class ContactComponent {
     privacyAccepted: false,
   };
 
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     console.log(this.contactData);
-  //   }
-  // }
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://dzmitry-stashkevich.de/sendMail.php',
+    endPoint: 'https://dzmitry-stashkevich.de//sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -40,7 +35,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({

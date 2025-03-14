@@ -161,13 +161,13 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 70px;
   height: 100%;
 }
 
 .overlay-content a {
-  width: 100%;
+  // width: 100%;
   display: block;
   color: $primary;
   font-size: clamp(12px, 2vw, 40px);
@@ -223,11 +223,13 @@ header {
 }
 .overlay-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
   padding: 3%;
   width: 100%;
+  // gap: 10;
   height: 240px;
+  // margin-top: 20;
   color: white;
   background-color: #1b1819;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
@@ -235,12 +237,10 @@ header {
 .overlay-title {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 20px;
+  align-items: baseline;
+  gap: 10px;
   h2 {
-    width: 426px;
-    height: 78px;
-    font-size: 78px;
+    font-size: clamp(30px, 5vw, 78px);
     font-weight: 800;
     &:hover {
       color: $highlight;
@@ -250,10 +250,9 @@ header {
 }
 .overlay-sozial {
   display: flex;
+  justify-content: end;
   gap: 20px;
-  width: 204px;
-  height: 40px;
-  align-items: end;
+  width: 100%;
   img {
     width: 40px;
     height: 40px;

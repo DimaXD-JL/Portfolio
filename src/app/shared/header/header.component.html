@@ -23,9 +23,9 @@
           [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
         ></div>
         <div class="overlay" [ngClass]="{ show: !isToggle }">
-          <div class="overlay-content" (click)="toggleMenu()">
+          <nav class="overlay-content" (click)="toggleMenu()">
             <div class="border">
-              <a href="#about">{{ "header-nav.Aboutme" | translate }}</a>
+              <a routerlink="/about">{{ "header-nav.Aboutme" | translate }}</a>
             </div>
             <div class="border">
               <a href="#skill">{{ "header-nav.MySkills" | translate }}</a>
@@ -39,6 +39,7 @@
             <div class="border">
               <a href="#contact">{{ "header-nav.Contact" | translate }}</a>
             </div>
+
             <div class="overlay-footer">
               <div class="overlay-title">
                 <h2>Say Hi!</h2>
@@ -58,7 +59,7 @@
                 /></a>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
       </nav>
     </div>
