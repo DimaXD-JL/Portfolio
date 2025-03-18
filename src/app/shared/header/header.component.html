@@ -6,14 +6,17 @@
       </a>
     </div>
     <div class="language-switch">
-      <div class="drop-down">
-        <button class="drop-btn">
-          <img src="/assets/img/world.png" alt="world.icon" />
-        </button>
-        <div class="dropdown-content">
-          <button (click)="changeLanguege('de')">De</button>
-          <button (click)="changeLanguege('en')">En</button>
-        </div>
+      <div class="language" [class.visible]="!isToggle">
+        <span
+          [class.active]="activeButton === 'en'"
+          (click)="changeLanguage('en')"
+          >EN</span
+        >
+        <span
+          [class.active]="activeButton === 'de'"
+          (click)="changeLanguage('de')"
+          >DE</span
+        >
       </div>
 
       <nav>
@@ -25,7 +28,7 @@
         <div class="overlay" [ngClass]="{ show: !isToggle }">
           <nav class="overlay-content" (click)="toggleMenu()">
             <div class="border">
-              <a routerlink="/about">{{ "header-nav.Aboutme" | translate }}</a>
+              <a href="#about">{{ "header-nav.Aboutme" | translate }}</a>
             </div>
             <div class="border">
               <a href="#skill">{{ "header-nav.MySkills" | translate }}</a>

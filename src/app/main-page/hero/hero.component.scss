@@ -16,17 +16,18 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(24px, 8vw, 96px);
+  font-size: clamp(32px, 8vw, 96px);
   font-weight: 800;
   margin: 0;
   line-height: 100%;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 10px;
+  // padding: 20px;
 }
 
 .sub-name {
   @include dFlex($fd: none);
-  padding: 20px;
+  // padding: 20px;
   gap: 20px;
   > p {
     font-size: clamp(14px, 2vw, 36px);

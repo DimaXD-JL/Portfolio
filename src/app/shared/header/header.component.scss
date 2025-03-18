@@ -11,10 +11,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 100%;
   max-width: 1440px;
   height: 60px;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  padding: 10px 10px 10px 10px;
 }
 .logo-box {
   display: flex;
@@ -26,28 +27,40 @@ header {
     width: 70px;
   }
 }
+.language {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Syne";
+  font-size: 18px;
+  font-weight: 700;
+
+  span {
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+
+    &:not(.active):hover::after {
+      content: "";
+      position: absolute;
+      bottom: 6px;
+      right: 10px;
+      width: 15px;
+      height: 2px;
+      background-color: black;
+    }
+
+    &.active {
+      border: 3px solid $highlight;
+    }
+  }
+}
 .language-switch {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
-.drop-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 10%;
-
-  > img {
-    width: 25px;
-  }
-}
-
-.drop-down {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -76,9 +89,9 @@ header {
   }
 }
 
-.drop-down:hover .dropdown-content {
-  display: block;
-}
+// .drop-down:hover .dropdown-content {
+//   display: block;
+// }
 .hamburger {
   width: 80px;
   height: 50px;
@@ -170,8 +183,8 @@ header {
   a {
     display: block;
     color: $primary;
-    font-size: clamp(30px, 2vw, 40px);
-    // width: 200px;
+    font-size: clamp(30px, 3vw, 40px);
+
     font-weight: 700;
     font-family: "Syne", sans-serif;
   }
@@ -186,7 +199,7 @@ header {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 0px;
+  left: -10px;
   border-bottom: 4px solid black;
   border-left: 4px solid black;
   width: 15px;
@@ -219,36 +232,6 @@ header {
     height: 0;
     border-left: none;
     transform: translateX(120px); /* Nach rechts bewegen */
-  }
-}
-/* Stil für den Rahmen nach dem Klick */
-.border.active::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 4px solid black;
-  animation: draw-border 0.4s ease-out forwards;
-}
-
-@keyframes draw-border {
-  0% {
-    width: 0;
-    height: 0;
-    border-width: 0;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-width: 4px;
-  }
-  100% {
-    top: -2px;
-    width: 100%;
-    height: 90%;
-    border-width: 4px;
   }
 }
 .overlay-footer {
@@ -292,5 +275,16 @@ header {
     &:hover {
       transform: translateY(-10px); /* Bewegung nach oben */
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .language {
+    display: none;
+    gap: 10px;
+  }
+
+  .visible {
+    display: flex;
   }
 }

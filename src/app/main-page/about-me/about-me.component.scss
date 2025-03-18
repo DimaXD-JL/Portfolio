@@ -4,14 +4,11 @@
   justify-content: center;
   width: 100%;
   max-width: 1440px;
-  // margin-top: 60px;
-  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .about {
   display: flex;
   justify-content: none;
   flex-direction: column;
-  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
   margin: 50px 0 110px 0;
   padding: 0px 15px 0px 15px;
 }
@@ -118,7 +115,7 @@ h2 {
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scaleX(1.5);
+    transform: scaleX(1.3);
     font-weight: bold;
   }
 }

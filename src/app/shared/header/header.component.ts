@@ -11,12 +11,18 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   isToggle = true;
+  activeButton: string | null = null; // Aktiver Button für die Sprachauswahl
 
+  constructor(private translate: TranslateService) {}
+
+  // Methode zum Wechseln der Sprache
+  changeLanguage(language: string) {
+    this.activeButton = language; // Setze den aktiven Button
+    this.translate.use(language); // Wechsle die Sprache mit ngx-translate
+  }
+
+  // Methode zum Umschalten des Menüs
   toggleMenu() {
     this.isToggle = !this.isToggle;
-  }
-  constructor(private translate: TranslateService) {}
-  changeLanguege(languege: string) {
-    this.translate.use(languege);
   }
 }
