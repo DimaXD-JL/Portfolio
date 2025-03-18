@@ -5,20 +5,22 @@
   width: 100%;
   max-width: 1440px;
   // margin-top: 60px;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 .about {
   display: flex;
   justify-content: none;
   flex-direction: column;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
   margin: 50px 0 110px 0;
+  padding: 0px 15px 0px 15px;
 }
 .about-content {
   display: flex;
   box-sizing: border-box;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 50px;
   p {
     text-align: justify;
   }
@@ -54,13 +56,34 @@
 
 h2 {
   font-family: "Syne", sans-serif;
-  font-size: clamp(15px, 5vw, 98px);
+  font-size: clamp(36px, 5vw, 98px);
   font-weight: 800;
   transition: color 0.3s ease;
   margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
 
   &:hover {
     color: $highlight;
+  }
+}
+.visible-on-large {
+  display: none;
+}
+
+.visible-on-small {
+  display: block;
+}
+
+@media (max-width: 930px) {
+  .visible-on-large {
+    display: flex;
+    justify-content: center;
+  }
+
+  .visible-on-small {
+    display: none;
   }
 }
 
@@ -69,8 +92,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 50px;
-  width: 50%;
+  gap: 20px;
+  width: 60%;
   padding-right: 32px;
 
   > span {
@@ -95,7 +118,7 @@ h2 {
   transition: all 0.3s ease;
 
   &:hover {
-    padding: 16px 60px;
+    transform: scaleX(1.5);
     font-weight: bold;
   }
 }
@@ -105,5 +128,35 @@ h2 {
   max-width: 1440px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+}
+@media (max-width: 930px) {
+  .visible-on-large {
+    display: flex;
+    justify-content: center;
+  }
+
+  .visible-on-small {
+    display: none;
+  }
+}
+@media (max-width: 920px) {
+  h2 {
+    justify-content: center;
+  }
+  .title {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .portrait {
+    width: 250px;
+    height: 250px;
+  }
+  .arrow {
+    justify-content: center;
+    img {
+      width: 200px;
+    }
+  }
 }
