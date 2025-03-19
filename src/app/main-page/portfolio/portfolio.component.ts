@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslatePipe],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
@@ -14,34 +15,34 @@ export class PortfolioComponent {
     {
       name: 'Join',
       languages: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description:
-        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
-      img: '../../../assets/img/project-test.png',
+      description: 'PROJECTS.JOIN_DESC',
+      img: '../../../assets/img/Join.png',
       link: '',
+      gitlink: '',
     },
     {
-      name: 'Join',
-      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description:
-        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
-      img: '../../../assets/img/project-test.png',
+      name: 'El Pollo Loco',
+      languages: 'Javascript | HTML | CSS |',
+      description: 'PROJECTS.PolloLoco',
+      img: '../../../assets/img/ElPolloLoco.png',
       link: '',
+      gitlink: '',
     },
     {
-      name: 'Join',
-      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description:
-        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
-      img: '../../../assets/img/project-test.png',
-      link: '',
+      name: 'PokéDex',
+      languages: 'JavaScript | HTML | CSS | Api',
+      description: 'PROJECTS.POKEDEX_DESC',
+      img: '../../../assets/img/PokeDex.png',
+      link: 'https://pokedex.dzmitry-stashkevich.de/',
+      gitlink: 'https://github.com/DimaXD-JL/Pokedex',
     },
     {
-      name: 'Join',
-      languages: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description:
-        'Join is a social media platform that allows users to create an account, post, and comment on other users posts. Users can also like and dislike posts.',
-      img: '../../../assets/img/project-test.png',
+      name: 'NEXT PROJECT',
+      languages: 'Angular | React | React-Nativ | Flutter',
+      description: 'PROJECTS.SOON',
+      img: '../../../assets/img/coming_soon.jpg',
       link: '',
+      gitlink: '',
     },
   ];
 

@@ -6,12 +6,23 @@
     "Referenz": "Referenz",
     "Contact": "Contact"
   },
-  "hero": {
-    "hello": "hello {{value}}",
-    "title": "Translation Demo"
-  },
+
   "about-me": {
-    "hello": "hello {{value}}",
-    "title": "Translation Demo"
+    "About": "About me"
+  },
+  "title": {
+    "About-me": "I am a front-end developer with a background in wholesale and online marketing. My path eventually led me to web development - my passion for digital solutions that make life easier and more accessible. In my work, I attach great importance to clear structures, clean code and well thought-out user guidance. With in-depth knowledge of JavaScript, HTML, CSS and experience with Angular, I develop modern, intuitive single-page applications."
+  },
+  "new-skills": {
+    "SKILLS_PROMPT": "Don't see the skill you need? <a href='#contact'>Contact me</a>. I'm always ready to learn!"
+  },
+  "portfolio-title": {
+    "title": "Immerse yourself in a selection of my projects and experience how ideas are brought to life through creative solutions and technical expertise. Here you have the opportunity to interact with my work and experience my skills first hand. Each project reflects my passion for innovation, precision and user-centred design."
+  },
+  "PROJECTS": {
+    "JOIN_DESC": "Task and contact management app with Angular and Firebase. This modern Angular application provides a user-friendly platform for the efficient management of tasks and contacts. After secure authentication via Firebase, users can easily organise, edit and manage their tasks and contacts.",
+    "POKEDEX_DESC": "Pokémon Information Library (based on the PokéAPI) This simple and efficient JavaScript library provides access to extensive Pokémon information and catalogues it in a user-friendly structure. Based on the PokéAPI, it allows developers to quickly and easily retrieve data about Pokémon, including names, types, abilities, statistics and much more.",
+    "PolloLoco": "Pepe's Adventure: The jumping, running and throwing game Join Pepe, the brave hero, on his action-packed adventure! In this object-orientated jumping, running and throwing game, Pepe must collect coins, find spicy Tabasco salsa and hold his own against the crazy chicken. With a mix of skill, strategy and humour, this game offers fun and challenge for players of all ages.",
+    "SOON": "I am constantly working on new ideas, concepts and solutions in this area. It is my space for innovation, experimentation and personal development. But even more than that: it is a place that shows how enthusiastic I am about new challenges - whether in my own projects or in those that I realise for others"
   }
 }

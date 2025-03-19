@@ -2,8 +2,7 @@
   <div class="portfolio-title">
     <h2>Portfolio</h2>
     <p>
-      Explore a section of my work here- Interact with projects to see my skills
-      in action.
+      {{ "portfolio-title.title" | translate }}
     </p>
   </div>
   <div class="project">
@@ -18,13 +17,13 @@
       </div>
       <div class="project-info">
         <div class="count" [ngClass]="reverseNumber(index)">
-          0{{ index + 1 }}/0{{ projects.length }}
+          0{{ index + 1 }}/0{{ projects.length || 0 }}
         </div>
         <h2>{{ project.name }}</h2>
         <p>{{ project.languages }}</p>
-        <span>{{ project.description }}</span>
+        <span>{{ project.description | translate }}</span>
         <div class="btn-box">
-          <a class="btn" href="{{ project.link }}">Github</a>
+          <a class="btn" href="{{ project.gitlink }}">Github</a>
           <a class="btn" href="{{ project.link }}">Live Test</a>
         </div>
       </div>

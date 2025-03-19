@@ -46,7 +46,10 @@ h2:hover {
   display: inline-block;
 
   > img {
-    width: 100%;
+    width: auto; /* Breite wird dynamisch angepasst */
+    height: auto; /* Höhe wird dynamisch angepasst */
+    max-width: 620px; /* Maximale Breite des Bildes */
+    max-height: 349px; /* Maximale Höhe des Bildes */
     filter: grayscale(100%);
     transition: filter 0.3s ease;
   }
@@ -62,12 +65,12 @@ h2:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 93%;
+  height: 97%;
   border: 4px solid #000;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   transform: translate(12px, 12px);
-  opacity: 0;
-  z-index: 1;
+  opacity: 1;
+  z-index: 0.9;
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
@@ -158,6 +161,8 @@ h2:hover {
 }
 .reverse-border::before {
   transform: translate(-20px, 10px);
+  width: 100%;
+  height: 90%;
 }
 .reverse-border .border-icon {
   top: 220px;

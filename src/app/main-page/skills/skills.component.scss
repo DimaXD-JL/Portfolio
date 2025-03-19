@@ -97,7 +97,7 @@ h2:hover {
     transform: translate(0) scale(1);
   }
 }
-.new-skills {
+:host ::ng-deep .new-skills {
   @include dFlex($fd: none);
   gap: 20px;
   margin: 35px;
@@ -110,11 +110,11 @@ h2:hover {
     display: inline-block;
   }
 }
-.new-skills img:hover {
+:host ::ng-deep .new-skills img:hover {
   animation: circleAnimation 0.5s forwards linear;
 }
 ////////////////////////// Pseudo-Element border link //////////////////////////
-.new-skills a::before {
+:host ::ng-deep .new-skills a::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -124,7 +124,7 @@ h2:hover {
   background-color: $highlight;
   transition: width 1s ease-in-out;
 }
-.new-skills a:hover::before {
+:host ::ng-deep .new-skills a:hover::before {
   animation: expand-and-border 0.2s ease-out forwards;
 }
 @keyframes expand-and-border {
@@ -133,12 +133,21 @@ h2:hover {
     transform: translateX(65px);
   }
 }
-.new-skills a:hover {
+:host ::ng-deep .new-skills a:hover {
   font-weight: 700;
 }
 
 .arrow {
   width: 100%;
   max-width: 1440px;
-  padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .arrow {
+    justify-content: center;
+    img {
+      width: 200px;
+    }
+  }
 }
