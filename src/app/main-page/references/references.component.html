@@ -1,19 +1,18 @@
 <section class="reference-section">
   <div>
-    <h2>References</h2>
+    <h2>{{ "REFERENCES.TITLE" | translate }}</h2>
     <p>
-      I thrive both independently and as part of a team. Here's what my
-      colleagues have to say about working with me.
+      {{ "REFERENCES.SUBTITLE" | translate }}
     </p>
   </div>
   <div class="reference">
     @for(reference of references; track reference.name; let index = $index) {
     <div class="reference-box">
       <span class="icon">,,</span>
-      <h3>{{ reference.name }}</h3>
-      <p>{{ reference.position }}</p>
+      <h3>{{ reference.name | translate }}</h3>
+      <p>{{ reference.position | translate }}</p>
       <p>
-        {{ reference.references }}
+        {{ reference.references | translate }}
       </p>
     </div>
     }

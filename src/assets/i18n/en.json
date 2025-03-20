@@ -24,5 +24,24 @@
     "POKEDEX_DESC": "Pokémon Information Library (based on the PokéAPI) This simple and efficient JavaScript library provides access to extensive Pokémon information and catalogues it in a user-friendly structure. Based on the PokéAPI, it allows developers to quickly and easily retrieve data about Pokémon, including names, types, abilities, statistics and much more.",
     "PolloLoco": "Pepe's Adventure: The jumping, running and throwing game Join Pepe, the brave hero, on his action-packed adventure! In this object-orientated jumping, running and throwing game, Pepe must collect coins, find spicy Tabasco salsa and hold his own against the crazy chicken. With a mix of skill, strategy and humour, this game offers fun and challenge for players of all ages.",
     "SOON": "I am constantly working on new ideas, concepts and solutions in this area. It is my space for innovation, experimentation and personal development. But even more than that: it is a place that shows how enthusiastic I am about new challenges - whether in my own projects or in those that I realise for others."
+  },
+  "REFERENCES": {
+    "TITLE": "Referenzen",
+    "SUBTITLE": "Feedback from the team - In the next section you will find what my colleagues say about working with me."
+  },
+  "REFERENCES-1": {
+    "NAME": "Martin Bock",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitry's involvement in the Cooking World group work helped us to complete the task ahead of schedule, he is very knowledgeable, very pleasant to work with and I would be happy to work with him again if I had the opportunity."
+  },
+  "REFERENCES-2": {
+    "NAME": "Michael Spari",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitry was a first-class team colleague at DA. His positive commitment and willingness to take on responsibility played a key role in helping us achieve our goals. In addition, his expertise was convincing across the board - with his in-depth knowledge and structured way of working, he was a valuable support for the entire team."
+  },
+  "REFERENCES-3": {
+    "NAME": "Cem Erdogmus",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitry is an excellent team member who is very pleasant to work with and a pleasure to work with. He was able to solve his tasks independently with great skill and always had an open ear when problems arose."
   }
 }

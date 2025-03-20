@@ -11,7 +11,7 @@
   margin: 50px 0 50px 0;
 
   h2 {
-    font-size: clamp(20px, 5vw, 78px);
+    font-size: clamp(20px, 9vw, 78px);
     font-weight: 800;
     transition: color 0.3s ease-in-out;
 
@@ -34,8 +34,13 @@
   border: 4px solid black;
   display: flex;
   flex-direction: column;
-  width: 390px;
-  height: 344px;
+  width: 100%;
+  max-width: 390px;
+  min-width: 250px;
+  height: auto;
+  flex: 1 1 250px;
+  padding: 20px;
+  box-sizing: border-box;
 
   h3 {
     font-size: 22px;

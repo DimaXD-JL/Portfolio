@@ -24,5 +24,24 @@
     "POKEDEX_DESC": "Pokémon-Informationsbibliothek (basierend auf der PokéAPI) Diese einfache und effiziente JavaScript-Bibliothek bietet Zugriff auf umfangreiche Pokémon-Informationen und katalogisiert diese in einer benutzerfreundlichen Struktur. Basierend auf der PokéAPI ermöglicht sie Entwicklern, schnell und unkompliziert Daten zu Pokémon abzurufen, darunter Namen, Typen, Fähigkeiten, Statistiken und vieles mehr.",
     "PolloLoco": "Pepe's Abendteuer: Das Sprung-, Lauf- und Wurfspiel.Begleite Pepe, den mutigen Helden, auf seinem actiongeladenen Abenteuer! In diesem objektorientierten Sprung-, Lauf- und Wurfspiel muss Pepe Münzen sammeln, scharfe Tabasco-Salsa finden und sich gegen das verrückte Huhn behaupten. Mit einer Mischung aus Geschicklichkeit, Strategie und Humor bietet dieses Spiel Spaß und Herausforderung für Spieler jeden Alters.",
     "SOON": "In diesem Bereich arbeite ich kontinuierlich an neuen Ideen, Konzepten und Lösungen. Es ist mein Raum für Innovation, Experimente und persönliche Weiterentwicklung. Doch noch mehr als das: Es ist ein Ort, der zeigt, wie sehr ich mich für neue Herausforderungen begeistern kann – sei es in meinen eigenen Projekten oder in denen, die ich für andere umsetze"
+  },
+  "REFERENCES": {
+    "TITLE": "Referenzen",
+    "SUBTITLE": "Feedback from the team - In the next section you will find what my colleagues say about working with me."
+  },
+  "REFERENCES-1": {
+    "NAME": "Martin Bock",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitrys Engagement bei der Gruppenarbeit „Cooking World“ hat uns geholfen, die Aufgabe vor dem Zeitplan abzuschließen.Er ist sehr kompetent, sehr angenehm in der Zusammenarbeit und ich würde gerne wieder mit ihm zusammenarbeiten, wenn ich die Gelegenheit dazu hätte."
+  },
+  "REFERENCES-2": {
+    "NAME": "Michael Spari",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitry war ein erstklassiger Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben. Zudem überzeugte er fachlich auf ganzer Linie – mit seinem fundierten Wissen und seiner strukturierten Arbeitsweise war er eine wertvolle Unterstützung für das gesamte Team."
+  },
+  "REFERENCES-3": {
+    "NAME": "Cem Erdogmus",
+    "POSITION": "Team Partner",
+    "REFERENCES": "Dzmitry ist ein ausgezeichnetes Teammitglied, mit dem die Zusammenarbeit sehr angenehm ist und viel Freude an der Arbeit mitbringt. Er konnte seine Aufgaben mit großem Geschick selbständig lösen und hatte immer ein offenes Ohr, wenn Probleme auftauchten."
   }
 }
