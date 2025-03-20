@@ -3,33 +3,37 @@
 .portfolio-section {
   width: 100%;
   max-width: 1440px;
-  padding: 0px 20px 0px 20px;
-  margin: 50px 0 50px 0;
+  padding: 0 20px;
+  margin: 50px 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 
   h2 {
     font-size: clamp(20px, 5vw, 45px);
     font-weight: 800;
   }
+
   p {
     font-size: clamp(12px, 5vw, 22px);
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
     font-weight: 400;
   }
 }
+
 h2:hover {
   color: $highlight;
 }
+
 .portfolio-title {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 1rem;
 }
+
 .project {
   width: 100%;
   padding: 80px;
@@ -38,11 +42,13 @@ h2:hover {
   gap: 50px;
   justify-content: center;
 }
+
 .project-box {
   width: 100%;
   display: flex;
   gap: 55px;
 }
+
 .project-border {
   position: relative;
   display: inline-block;
@@ -57,40 +63,37 @@ h2:hover {
   &:hover > img {
     filter: grayscale(0%);
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translate(12px, 12px);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
 }
 
-.project-border::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-
-  border: 4px solid #000;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  transform: translate(12px, 12px);
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
 .project-box:hover .project-border::before,
 .project-box:hover .border-icon,
 .project-box:hover .project-info {
   opacity: 1;
 }
+
 .border-icon {
   position: absolute;
   top: 200px;
   right: -38px;
   width: 40px;
   height: 40px;
-  background: url("/assets/img/arrow-border.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("/assets/img/arrow-border.png") center/cover no-repeat;
   opacity: 0;
   transition: opacity 0.3s ease, transform 1s ease;
   z-index: 1;
@@ -123,21 +126,24 @@ h2:hover {
   opacity: 1;
   transform: translateX(0);
 }
+
 .count {
   width: 100%;
   font-size: clamp(20px, 5vw, 40px);
   color: black;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   font-family: "Syne", sans-serif;
   font-weight: 700;
   margin-top: 30px;
 }
+
 .btn-box {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
+
 .btn {
   border: solid 5px black;
   text-decoration: none;
@@ -148,118 +154,98 @@ h2:hover {
   font-weight: 400;
   cursor: pointer;
   margin: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, font-weight 0.3s ease;
 }
+
 .btn:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.1);
   font-weight: bold;
 }
 
 .reverse {
   flex-direction: row-reverse;
-}
-.reverse .project-info {
-  transform: translateX(70px);
-}
-.reverse-number {
-  justify-content: start;
-  margin-top: 30px;
-}
-.reverse-border::before {
-  transform: translate(-20px, 10px);
-  height: auto;
-  min-height: 100%;
-}
-.reverse-border .border-icon {
-  top: 220px;
-  right: 0;
-  left: -35px;
-  transform: rotate(135deg);
-}
-@media (max-width: 1400px) {
-  .project-border::before {
-    min-height: 85%;
+
+  .project-info {
+    transform: translateX(70px);
   }
-  .reverse-border::before {
+
+  .count {
+    justify-content: flex-start;
+  }
+
+  .project-border::before {
     transform: translate(-20px, 10px);
-    height: auto;
-    min-height: 75%;
+  }
+
+  .border-icon {
+    top: 220px;
+    right: 0;
+    left: -35px;
   }
 }
+
 @media (max-width: 1080px) {
-  .project-border::before {
-    min-height: 100%;
-  }
-  .reverse-border::before {
-    min-height: 100%;
-  }
   .project-box {
     display: contents;
   }
+
   .project-info {
     width: 100%;
     margin-left: 0;
     margin-top: 30px;
     gap: 20px;
   }
+
   .border-icon {
     top: 125px;
-    transition: opacity 0.3s ease, transform 1s ease;
   }
-  .portfolio-section {
-    gap: 30px;
-  }
+
   .project {
     padding: 50px;
-    gap: 0px;
+    gap: 0;
   }
 }
+
 @media (max-width: 635px) {
-  .reverse-border .border-icon {
+  .reverse .border-icon {
     top: 140px;
-    right: 0;
-    left: -35px;
-    transform: rotate(135deg);
   }
+
   .border-icon {
     width: 30px;
     height: 30px;
   }
+
   .btn {
-    display: flex;
-    align-items: center;
     padding: 5px 10px;
     font-size: 15px;
-    margin: 0px;
+    margin: 0;
   }
-  .project-info {
-    transform: translateY(-100px);
-  }
+
+  .project-info,
   .reverse .project-info {
     transform: translateY(-100px);
   }
 }
+
 @media (max-width: 450px) {
   .project-border::before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    min-height: 93%;
+    height: 93%;
   }
-  .reverse-border .border-icon {
+
+  .reverse .border-icon {
     top: 100px;
-    right: 0;
     left: -27px;
-    transform: rotate(135deg);
   }
+
   .border-icon {
     top: 100px;
     right: -30px;
     width: clamp(12px, 5vw, 30px);
     height: clamp(12px, 5vw, 30px);
   }
+
   .project {
-    padding: 30px;
+    padding: 35px;
   }
 }
