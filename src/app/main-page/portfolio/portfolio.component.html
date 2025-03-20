@@ -7,6 +7,9 @@
   </div>
   <div class="project">
     @for(project of projects; track project.name; let index = $index) {
+    <div class="count" [ngClass]="reverseNumber(index)">
+      0{{ index + 1 }}/0{{ projects.length || 0 }}
+    </div>
     <div class="project-box" [ngClass]="reverseClass(index)">
       <div class="project-border" [ngClass]="reverseBorder(index)">
         <img
@@ -16,15 +19,16 @@
         <div class="border-icon"></div>
       </div>
       <div class="project-info">
-        <div class="count" [ngClass]="reverseNumber(index)">
-          0{{ index + 1 }}/0{{ projects.length || 0 }}
-        </div>
         <h2>{{ project.name }}</h2>
         <p>{{ project.languages }}</p>
         <span>{{ project.description | translate }}</span>
         <div class="btn-box">
-          <a class="btn" href="{{ project.gitlink }}">Github</a>
-          <a class="btn" href="{{ project.link }}">Live Test</a>
+          @if (index <3) {
+          <a class="btn" href="{{ project.gitlink }}" target="_blank">Github</a>
+          <a class="btn" href="{{ project.link }}" target="_blank">Live Test</a>
+          } @if (index === 3) {
+          <a class="btn" href="{{ project.contact }}">Contact</a>
+          }
         </div>
       </div>
     </div>
