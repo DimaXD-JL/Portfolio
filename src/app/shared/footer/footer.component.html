@@ -2,7 +2,7 @@
   <div class="footer-box">
     <div class="footer-left">
       <div class="logo">
-        <a href="">
+        <a (click)="navigateToMainPage()">
           <img src="/assets/img/logo-W.png" alt="logo" />
         </a>
       </div>
@@ -22,7 +22,9 @@
     <div class="footer-bottom">
       <p>© Dzmitry Stashkevich</p>
 
-      <div><a routerLink="imprint">Legal notice</a></div>
+      <div>
+        <a routerLink="/imprint" (click)="navigateToMainPage()">Legal notice</a>
+      </div>
     </div>
   </div>
 </footer>

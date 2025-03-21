@@ -25,10 +25,25 @@ export class HeaderComponent {
       this.viewportScroller.scrollToAnchor('hero');
     });
   }
-  scrollToSection(sectionId: string) {
-    this.viewportScroller.scrollToAnchor(sectionId);
-  }
 
+  scrollToSection(sectionId: string) {
+    if (this.router.url !== '/') {
+      this.router.navigate(['/']).then(() => {
+        localStorage.setItem('scrollToSection', sectionId);
+      });
+      return;
+    }
+
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const yOffset = -100; // Anpassen, falls notwendig
+        const yPosition =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: yPosition, behavior: 'smooth' });
+      }
+    });
+  }
   changeLanguage(language: string) {
     this.activeButton = language;
     this.translate.use(language);

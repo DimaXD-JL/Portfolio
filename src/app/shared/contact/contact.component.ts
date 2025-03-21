@@ -51,4 +51,14 @@ export class ContactComponent {
       ngForm.resetForm();
     }
   }
+  scrollToTop(): void {
+    if (
+      window.location.pathname === '/' ||
+      window.location.pathname === '/index.html'
+    ) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.location.href = '/';
+    }
+  }
 }

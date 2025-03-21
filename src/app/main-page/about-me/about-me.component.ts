@@ -10,9 +10,11 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss',
 })
 export class AboutMeComponent {
+  activeButton: string | null = null;
   constructor(private translate: TranslateService) {}
 
   changeLanguage(language: string) {
+    this.activeButton = language;
     this.translate.use(language);
   }
 }

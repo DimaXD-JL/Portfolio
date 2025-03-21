@@ -11,6 +11,8 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent {
+  translate: any;
+  activeButton: string | null = null;
   projects = [
     {
       name: 'Join',
@@ -45,6 +47,10 @@ export class PortfolioComponent {
     },
   ];
 
+  changeLanguage(language: string) {
+    this.activeButton = language;
+    this.translate.use(language);
+  }
   reverseClass(index: number): string {
     return index % 2 !== 0 ? 'reverse' : '';
   }

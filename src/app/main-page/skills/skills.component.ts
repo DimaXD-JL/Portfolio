@@ -12,7 +12,9 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 export class SkillsComponent {
   constructor(private translate: TranslateService) {}
 
+  activeButton: string | null = null;
   changeLanguage(language: string) {
+    this.activeButton = language;
     this.translate.use(language);
   }
   skills = [
