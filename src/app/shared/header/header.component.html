@@ -1,7 +1,7 @@
 <header>
   <div class="header-content">
     <div class="logo-box">
-      <a routerlink="hero">
+      <a (click)="navigateToMainPage()">
         <img src="/assets/img/logo-black.png" alt="logo" />
       </a>
     </div>
@@ -28,19 +28,29 @@
         <div class="overlay" [ngClass]="{ show: !isToggle }">
           <nav class="overlay-content" (click)="toggleMenu()">
             <div class="border">
-              <a href="#about">{{ "header-nav.Aboutme" | translate }}</a>
+              <a (click)="scrollToSection('about')">{{
+                "header-nav.Aboutme" | translate
+              }}</a>
             </div>
             <div class="border">
-              <a href="#skill">{{ "header-nav.MySkills" | translate }}</a>
+              <a (click)="scrollToSection('skill')">{{
+                "header-nav.MySkills" | translate
+              }}</a>
             </div>
             <div class="border">
-              <a href="#project">{{ "header-nav.Portfolio" | translate }}</a>
+              <a (click)="scrollToSection('project')">{{
+                "header-nav.Portfolio" | translate
+              }}</a>
             </div>
             <div class="border">
-              <a href="#referenz">{{ "header-nav.Referenz" | translate }}</a>
+              <a (click)="scrollToSection('referenz')">{{
+                "header-nav.Referenz" | translate
+              }}</a>
             </div>
             <div class="border">
-              <a href="#contact">{{ "header-nav.Contact" | translate }}</a>
+              <a (click)="scrollToSection('contact')">{{
+                "header-nav.Contact" | translate
+              }}</a>
             </div>
 
             <div class="overlay-footer">

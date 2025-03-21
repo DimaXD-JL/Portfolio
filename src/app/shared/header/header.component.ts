@@ -1,29 +1,39 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   isToggle = true;
-  activeButton: string | null = null; // Aktiver Button für die Sprachauswahl
+  activeButton: string | null = null;
 
-  // Korrigierter Konstruktor
-  constructor(private router: Router, private translate: TranslateService) {}
+  constructor(
+    private router: Router,
+    private translate: TranslateService,
+    private viewportScroller: ViewportScroller
+  ) {}
 
-  // Methode zum Wechseln der Sprache
-  changeLanguage(language: string) {
-    this.activeButton = language; // Setze den aktiven Button
-    this.translate.use(language); // Wechsle die Sprache mit ngx-translate
+  navigateToMainPage() {
+    this.router.navigate(['/']).then(() => {
+      this.viewportScroller.scrollToAnchor('hero');
+    });
+  }
+  scrollToSection(sectionId: string) {
+    this.viewportScroller.scrollToAnchor(sectionId);
   }
 
-  // Methode zum Umschalten des Menüs
+  changeLanguage(language: string) {
+    this.activeButton = language;
+    this.translate.use(language);
+  }
+
   toggleMenu() {
     this.isToggle = !this.isToggle;
   }
