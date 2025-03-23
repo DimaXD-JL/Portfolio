@@ -4,7 +4,7 @@
   </div>
   <div class="contact-title">
     <h2>Want to discuss a new project?</h2>
-    <p>say hello! let's discuss you ideas and make it happen</p>
+    <p>say hello! let's discuss your ideas and make it happen</p>
   </div>
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -17,6 +17,7 @@
           id="name"
           name="name"
           required
+          placeholder=" "
           [ngClass]="{
             valid: name.valid && name.touched,
             invalid: !name.valid && name.touched
@@ -37,6 +38,7 @@
           id="email"
           name="email"
           required
+          placeholder=" "
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           [ngClass]="{
             valid: email.valid && email.touched,
@@ -59,6 +61,7 @@
           id="message"
           name="message"
           required
+          placeholder=" "
           [ngClass]="{
             valid: message.valid && message.touched,
             invalid: !message.valid && message.touched
@@ -86,10 +89,7 @@
         </label>
       </div>
       <div class="button-container">
-        <button
-          type="submit"
-          [disabled]="!contactForm.valid || !contactData.privacyAccepted"
-        >
+        <button type="submit" [disabled]="!contactForm.form.valid">
           Submit
         </button>
         <div class="arrow-up">

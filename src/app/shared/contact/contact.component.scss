@@ -40,11 +40,10 @@ textarea {
   transition: 0.4s;
   font-size: 14px;
 }
-
 .input-group input:focus ~ span,
-.input-group input:valid:not(:placeholder-shown) ~ span,
+.input-group input:not(:placeholder-shown) ~ span,
 .input-group textarea:focus ~ span,
-.input-group textarea:valid:not(:placeholder-shown) ~ span {
+.input-group textarea:not(:placeholder-shown) ~ span {
   top: 5px;
   left: 20px;
   font-size: 16px;
@@ -240,9 +239,6 @@ button[type="submit"]:disabled {
   .contact-form {
     width: 90%;
   }
-  // .contact-title {
-  //   text-align: center;
-  // }
 }
 @media (max-width: 600px) {
   .arrow-up {
@@ -253,7 +249,4 @@ button[type="submit"]:disabled {
   .arrow-up {
     display: none;
   }
-  // .contact-title {
-  //   text-align: center;
-  // }
 }

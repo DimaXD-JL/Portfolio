@@ -41,14 +41,17 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            console.info('Form submitted successfully', response);
           },
           error: (error) => {
-            console.error(error);
+            console.error('Error submitting form', error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            console.info('Send post complete');
+          },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
+    } else if (ngForm.submitted && !ngForm.form.valid) {
+      console.warn('Form is invalid');
     }
   }
   scrollToTop(): void {
