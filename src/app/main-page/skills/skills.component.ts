@@ -23,12 +23,16 @@ export class SkillsComponent {
       img: 'Angular.png',
     },
     {
-      name: 'html',
-      img: 'html.png',
+      name: 'TypeScript',
+      img: 'TypeScript.png',
     },
     {
-      name: 'Api',
-      img: 'Api.png',
+      name: 'JavaScript',
+      img: 'JavaScript.png',
+    },
+    {
+      name: 'html',
+      img: 'html.png',
     },
     {
       name: 'css',
@@ -43,20 +47,20 @@ export class SkillsComponent {
       img: 'Git.png',
     },
     {
-      name: 'JavaScript',
-      img: 'JavaScript.png',
-    },
-    {
-      name: 'Material Design',
-      img: 'Material_Design.png',
-    },
-    {
-      name: 'TypeScript',
-      img: 'TypeScript.png',
+      name: 'Api',
+      img: 'Api.png',
     },
     {
       name: 'Boostrap',
       img: 'Bootstrap.png',
+    },
+    {
+      name: 'Scrum',
+      img: 'Scrum.png',
+    },
+    {
+      name: 'Material Design',
+      img: 'Material_Design.png',
     },
   ];
 }

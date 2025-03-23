@@ -1,10 +1,10 @@
 <div class="container">
   <div class="contact-info">
-    <h2>Say Hi!</h2>
+    <h2>{{ "CONTACT.INFO" | translate }}</h2>
   </div>
   <div class="contact-title">
-    <h2>Want to discuss a new project?</h2>
-    <p>say hello! let's discuss your ideas and make it happen</p>
+    <h2>{{ "CONTACT.TITLE" | translate }}</h2>
+    <p>{{ "CONTACT.SUBTITLE" | translate }}</p>
   </div>
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -23,11 +23,11 @@
             invalid: !name.valid && name.touched
           }"
         />
-        <span>Your name</span>
+        <span>{{ "CONTACT.YOUNAME" | translate }}</span>
       </div>
 
       @if (!name.valid && name.touched && !name.disabled) {
-      <p class="error-message">Your name is required</p>
+      <p class="error-message">{{ "CONTACT.YOUNAME-ERROR" | translate }}</p>
       }
 
       <div class="input-group">
@@ -45,11 +45,11 @@
             invalid: !email.valid && email.touched
           }"
         />
-        <span>Your email</span>
+        <span>{{ "CONTACT.YOUREMAIL" | translate }}</span>
       </div>
 
       @if (!email.valid && email.touched && !email.disabled) {
-      <p class="error-message">Your email is required</p>
+      <p class="error-message">{{ "CONTACT.YOUREMAIL-ERROR" | translate }}</p>
       }
 
       <div class="input-group">
@@ -68,10 +68,12 @@
           }"
           style="height: 200px"
         ></textarea>
-        <span>Your message</span>
+        <span>{{ "CONTACT.YOURMESSAGE" | translate }}</span>
 
         @if (!message.valid && message.touched && !message.disabled) {
-        <p class="error-message">Your message is required</p>
+        <p class="error-message">
+          {{ "CONTACT.YOURMESSAGE-ERROR" | translate }}
+        </p>
         }
       </div>
       <div class="checkbox">
@@ -83,17 +85,21 @@
           required
         />
         <label for="privacy">
-          I've read the
-          <a routerLink="/policy" (click)="scrollToTop()">Privacy policy</a>
-          and agree to the processing of my data as outlined.
+          {{ "CONTACT.PRIVACY-FIRST" | translate }}
+          <a routerLink="/policy" (click)="scrollToTop()">{{
+            "CONTACT.PRIVACY-LINK" | translate
+          }}</a>
+          {{ "CONTACT.PRIVACY-SECAND" | translate }}
         </label>
       </div>
       <div class="button-container">
         <button type="submit" [disabled]="!contactForm.form.valid">
-          Submit
+          {{ "CONTACT.SUBMIT" | translate }}
         </button>
         <div class="arrow-up">
-          <a href="#hero"><img src="assets/img/arrow-scolup.png" alt="" /></a>
+          <a href="#hero"
+            ><img src="assets/img/arrow-scolup.png" alt="arrow-up"
+          /></a>
         </div>
       </div>
     </form>

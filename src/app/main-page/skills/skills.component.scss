@@ -143,6 +143,18 @@ h2:hover {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 720px) {
+  .skills {
+    padding: 5px;
+    gap: 30px;
+  }
+  .icon-box {
+    > img {
+      width: clamp(50px, 5vw, 70px);
+      height: clamp(50px, 5vw, 70px);
+    }
+  }
+}
 @media (max-width: 500px) {
   .arrow {
     justify-content: center;

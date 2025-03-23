@@ -1,17 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink],
+  imports: [FormsModule, CommonModule, RouterLink, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  activeButton: string | null = null;
   http = inject(HttpClient);
 
   contactData = {
@@ -23,8 +25,14 @@ export class ContactComponent {
 
   mailTest = false;
 
+  constructor(private translate: TranslateService) {}
+
+  changeLanguage(language: string) {
+    this.activeButton = language;
+    this.translate.use(language);
+  }
   post = {
-    endPoint: 'https://dzmitry-stashkevich.de//sendMail.php',
+    endPoint: 'https://dzmitry-stashkevich.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,7 +49,6 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            console.info('Form submitted successfully', response);
           },
           error: (error) => {
             console.error('Error submitting form', error);

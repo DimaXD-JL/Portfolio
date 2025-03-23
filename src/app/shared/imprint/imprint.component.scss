@@ -1,11 +1,11 @@
 @import "../../../styles.scss";
 section {
-  text-align: center;
+  display: flex;
   flex-direction: column;
   width: 100%;
   padding: 5%;
   max-width: 1440px;
   height: 100vh;
-  display: grid;
   font-size: clamp(12px, 3vw, 20px);
+  justify-content: center;
 }

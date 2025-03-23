@@ -8,7 +8,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url("./assets/img/Background Pattern.svg");
+  background-image: url(../src/assets/img/Background-Pattern.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $secondary;
 }
 * {
