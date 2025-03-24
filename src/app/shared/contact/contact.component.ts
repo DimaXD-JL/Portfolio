@@ -25,12 +25,6 @@ export class ContactComponent {
 
   mailTest = false;
 
-  constructor(private translate: TranslateService) {}
-
-  changeLanguage(language: string) {
-    this.activeButton = language;
-    this.translate.use(language);
-  }
   post = {
     endPoint: 'https://dzmitry-stashkevich.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -41,7 +35,12 @@ export class ContactComponent {
       },
     },
   };
+  constructor(private translate: TranslateService) {}
 
+  changeLanguage(language: string) {
+    this.activeButton = language;
+    this.translate.use(language);
+  }
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http

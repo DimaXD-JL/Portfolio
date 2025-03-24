@@ -1,5 +1,5 @@
 @import "../../../styles.scss";
-
+@include scroll-down;
 .hero {
   @include dFlex($jc: none);
   width: 100%;
@@ -68,14 +68,5 @@
   }
   > p {
     font-weight: bold;
-  }
-}
-
-@keyframes scroll-down {
-  0% {
-    transform: translateY(-200px);
-  }
-  100% {
-    transform: translateY(200px);
   }
 }

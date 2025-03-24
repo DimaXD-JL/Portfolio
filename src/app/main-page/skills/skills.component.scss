@@ -1,5 +1,6 @@
 @import "../../../styles.scss";
-
+@include circleAnimation;
+@include expandAndBorder;
 h2 {
   display: flex;
   justify-content: center;
@@ -15,9 +16,6 @@ h2 {
   > h2:hover {
     color: $highlight;
   }
-}
-h2:hover {
-  color: $highlight;
 }
 .skills-section {
   display: flex;
@@ -68,35 +66,6 @@ h2:hover {
   }
 }
 
-@keyframes circleAnimation {
-  0% {
-    transform: translate(0) scale(1);
-  }
-  12% {
-    transform: translate(25px) scale(0.9);
-  }
-  25% {
-    transform: translate(50px) scale(0.8);
-  }
-  37% {
-    transform: translate(25px) scale(0.6);
-  }
-  50% {
-    transform: translate(0) scale(0.4);
-  }
-  62% {
-    transform: translate(-25px) scale(0.6);
-  }
-  75% {
-    transform: translate(-50px) scale(0.8);
-  }
-  87% {
-    transform: translate(-25px) scale(0.9);
-  }
-  100% {
-    transform: translate(0) scale(1);
-  }
-}
 :host ::ng-deep .new-skills {
   @include dFlex($fd: none);
   gap: 20px;
@@ -126,12 +95,6 @@ h2:hover {
 }
 :host ::ng-deep .new-skills a:hover::before {
   animation: expand-and-border 0.2s ease-out forwards;
-}
-@keyframes expand-and-border {
-  100% {
-    width: 45%;
-    transform: translateX(65px);
-  }
 }
 :host ::ng-deep .new-skills a:hover {
   font-weight: 700;
