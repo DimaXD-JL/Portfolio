@@ -40,12 +40,12 @@
   @include dFlex($jc: space-between, $ai: flex-end, $fd: none);
   width: 100%;
   max-width: 1440px;
-  padding: 4%;
+  padding: 0% 4%;
 }
 
 .hero-mail {
   font-family: "Overpass", sans-serif;
-  font-size: clamp(12px, 5vw, 22px);
+  font-size: clamp(12px, 5vw, 20px);
   font-weight: 800;
   color: $primary;
   text-decoration: none;

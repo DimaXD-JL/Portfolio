@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [FormsModule, CommonModule, RouterLink, TranslatePipe],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
   activeButton: string | null = null;
@@ -24,6 +24,7 @@ export class ContactComponent {
   };
 
   mailTest = false;
+  showSuccessMessage: boolean | undefined;
 
   post = {
     endPoint: 'https://dzmitry-stashkevich.de/sendMail.php',
@@ -35,31 +36,43 @@ export class ContactComponent {
       },
     },
   };
-  constructor(private translate: TranslateService) {}
 
-  changeLanguage(language: string) {
-    this.activeButton = language;
-    this.translate.use(language);
-  }
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.showSuccessMessage = true;
+
+            setTimeout(() => {
+              this.showSuccessMessage = false;
+            }, 3000);
+
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error('Error submitting form', error);
-          },
-          complete: () => {
-            console.info('Send post complete');
+            console.error(error);
           },
         });
-    } else if (ngForm.submitted && !ngForm.form.valid) {
-      console.warn('Form is invalid');
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      this.showSuccessMessage = true;
+
+      setTimeout(() => {
+        this.showSuccessMessage = false;
+      }, 3000);
+
+      ngForm.resetForm();
     }
   }
+
+  constructor(private translate: TranslateService) {}
+
+  changeLanguage(language: string) {
+    this.activeButton = language;
+    this.translate.use(language);
+  }
+
   scrollToTop(): void {
     if (
       window.location.pathname === '/' ||

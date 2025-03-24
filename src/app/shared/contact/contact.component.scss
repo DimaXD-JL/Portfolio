@@ -230,6 +230,11 @@ button[type="submit"]:disabled {
 .arrow-up a:hover img {
   transform: scaleY(1.5);
 }
+.success-message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 @media (max-width: 825px) {
   .arrow-up {
     left: 150px;

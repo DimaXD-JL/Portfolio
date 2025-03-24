@@ -96,6 +96,11 @@
         <button type="submit" [disabled]="!contactForm.form.valid">
           {{ "CONTACT.SUBMIT" | translate }}
         </button>
+        <!-- Erfolgsmeldung (showSuccessMessage) -->
+        <p class="success-message" *ngIf="showSuccessMessage">
+          Danke für deine Nachricht! Ich werde mich so schnell wie möglich bei
+          dir melden.
+        </p>
         <div class="arrow-up">
           <a href="#hero"
             ><img src="assets/img/arrow-scolup.png" alt="arrow-up"

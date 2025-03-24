@@ -43,7 +43,7 @@ export class PortfolioComponent {
       languages: 'Angular | React | React-Nativ | Flutter',
       description: 'PROJECTS.SOON',
       img: '../../../assets/img/coming_soon.jpg',
-      contact: '#conatct',
+      contact: '',
     },
   ];
 
