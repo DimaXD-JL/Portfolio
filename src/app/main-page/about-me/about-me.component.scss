@@ -6,11 +6,9 @@
   max-width: 1440px;
 }
 .about {
-  display: flex;
-  justify-content: none;
-  flex-direction: column;
+  @include dFlex($jc: none, $fd: column);
   margin: 50px 0 110px 0;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px;
 }
 .about-content {
   display: flex;
@@ -53,7 +51,7 @@
 
 h2 {
   font-family: "Syne", sans-serif;
-  font-size: clamp(36px, 5vw, 98px);
+  font-size: clamp(36px, 5vw, 78px);
   font-weight: 800;
   transition: color 0.3s ease;
   margin-bottom: 20px;
@@ -125,7 +123,6 @@ h2 {
   max-width: 1440px;
   display: flex;
   justify-content: flex-end;
-  // padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 @media (max-width: 930px) {
   .visible-on-large {

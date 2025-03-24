@@ -5,14 +5,12 @@
   width: 100%;
   max-width: 1440px;
   height: 100vh;
-  // margin-top: 90px;
   padding: 0 clamp(2rem, 13.333vw - 6rem, 6rem);
 }
 
 .hero-content {
   @include dFlex();
   height: 50%;
-  // margin-top: 60px;
 }
 
 .hero-content h1 {
@@ -22,12 +20,10 @@
   line-height: 100%;
   text-align: center;
   margin-bottom: 10px;
-  // padding: 20px;
 }
 
 .sub-name {
-  @include dFlex($fd: none);
-  // padding: 20px;
+  @include dFlex($fd: row);
   gap: 20px;
   > p {
     font-size: clamp(14px, 2vw, 36px);

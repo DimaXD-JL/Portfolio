@@ -19,8 +19,8 @@ export class PortfolioComponent {
       languages: 'Angular | TypeScript | HTML | CSS | Firebase',
       description: 'PROJECTS.JOIN_DESC',
       img: '../../../assets/img/Join.png',
-      link: '',
-      gitlink: '',
+      link: 'https://www.join-summary.dzmitry-stashkevich.de',
+      gitlink: 'https://github.com/DimaXD-JL/Join-Summary',
     },
     {
       name: 'El Pollo Loco',
