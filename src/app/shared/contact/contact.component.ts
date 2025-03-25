@@ -27,7 +27,7 @@ export class ContactComponent {
   showSuccessMessage: boolean | undefined;
 
   post = {
-    endPoint: 'https://dzmitry-stashkevich.de/sendMail.php',
+    endPoint: 'https://www.dzmitry-stashkevich.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -47,7 +47,7 @@ export class ContactComponent {
 
             setTimeout(() => {
               this.showSuccessMessage = false;
-            }, 3000);
+            }, 10000);
 
             ngForm.resetForm();
           },
@@ -55,14 +55,6 @@ export class ContactComponent {
             console.error(error);
           },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.showSuccessMessage = true;
-
-      setTimeout(() => {
-        this.showSuccessMessage = false;
-      }, 3000);
-
-      ngForm.resetForm();
     }
   }
 

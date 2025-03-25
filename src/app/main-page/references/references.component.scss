@@ -35,12 +35,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 450px;
   max-width: 390px;
   min-width: 250px;
-  // height: auto;
-  // flex: 1 1 250px;
   padding: 20px;
-  box-sizing: border-box;
 
   h3 {
     font-size: 22px;
@@ -51,6 +49,17 @@
     margin: 16px;
     font-size: clamp(16px, 1vw, 24px);
   }
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
 
   &:hover {
     border-color: $highlight;
@@ -60,7 +69,16 @@
     }
   }
 }
+.reference-text {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 300px;
+  scrollbar-width: none;
+}
 
+.reference-text::-webkit-scrollbar {
+  display: none;
+}
 .icon {
   position: relative;
   left: 50%;
@@ -75,4 +93,32 @@
   max-width: 1440px;
   display: flex;
   justify-content: flex-end;
+}
+.pagination-buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f5f5dc;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+button[disabled] {
+  background-color: #e0e0d1;
+  color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
 }

@@ -32,17 +32,26 @@
   "REFERENCES-1": {
     "NAME": "Martin Bock",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/martin-bock-8aa698139/",
     "REFERENCES": "Dzmitrys Engagement bei der Gruppenarbeit „Cooking World“ hat uns geholfen, die Aufgabe vor dem Zeitplan abzuschließen.Er ist sehr kompetent, sehr angenehm in der Zusammenarbeit und ich würde gerne wieder mit ihm zusammenarbeiten, wenn ich die Gelegenheit dazu hätte."
   },
   "REFERENCES-2": {
     "NAME": "Michael Spari",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/michael-spari-3541a3351/",
     "REFERENCES": "Dzmitry war ein erstklassiger Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben. Zudem überzeugte er fachlich auf ganzer Linie – mit seinem fundierten Wissen und seiner strukturierten Arbeitsweise war er eine wertvolle Unterstützung für das gesamte Team."
   },
   "REFERENCES-3": {
     "NAME": "Cem Erdogmus",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/cem-e-4a0b6b34b/",
     "REFERENCES": "Dzmitry ist ein ausgezeichnetes Teammitglied, mit dem die Zusammenarbeit sehr angenehm ist und viel Freude an der Arbeit mitbringt. Er konnte seine Aufgaben mit großem Geschick selbständig lösen und hatte immer ein offenes Ohr, wenn Probleme auftauchten."
+  },
+  "REFERENCES-4": {
+    "NAME": "Denis Maier",
+    "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/red-shiba/",
+    "REFERENCES": "Dzmitry zeigte während des gesamten Projekts eine hohe Eigenverantwortung und ein bemerkenswertes Engagement für die Qualität seiner Arbeit. Besonders hervorzuheben ist seine Fähigkeit, klar und effizient zu kommunizieren, was es dem gesamten Team ermöglichte, zügig voranzukommen. Er arbeitete sowohl an der Front-End-Entwicklung als auch an der Funktionalität der Task-Bearbeitung, und seine technische Kompetenz in HTML, CSS und TypeScript war dabei stets auf hohem Niveau.Dzmitry war außerdem sehr gewissenhaft bei der Umsetzung der Responsiveness. Dabei zeigte er ein gutes Auge für Details und stellte sicher, dass das Design auf allen Geräten gut funktionierte. Seine strukturierte Herangehensweise an komplexe Aufgaben und seine Fähigkeit, Probleme schnell zu erkennen und zu beheben, machten ihn zu einem wertvollen Teammitglied.Er bewies zudem eine hohe Flexibilität und Bereitschaft, sich kontinuierlich anzupassen, um das bestmögliche Ergebnis zu erzielen. Dzmitry trug mit seiner zuverlässigen und fokussierten Arbeitsweise maßgeblich zur erfolgreichen Umsetzung des Projekts bei."
   },
   "CONTACT": {
     "INFO": "Sag Hallo!",
@@ -57,7 +66,8 @@
     "PRIVACY-FIRST": "Ich habe die",
     "PRIVACY-LINK": "Datenschutzerklärung",
     "PRIVACY-SECAND": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Richtlinie zu.",
-    "SUBMIT": "Nachricht senden"
+    "SUBMIT": "Nachricht senden",
+    "MASSAGE": "Danke für deine Nachricht! Ich werde mich so schnell wie möglich bei dir melden."
   },
   "PRIVACY": {
     "TITLE": "Datenschutzerklärung",

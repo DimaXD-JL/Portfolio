@@ -32,17 +32,26 @@
   "REFERENCES-1": {
     "NAME": "Martin Bock",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/martin-bock-8aa698139/",
     "REFERENCES": "Dzmitry's involvement in the Cooking World group work helped us to complete the task ahead of schedule, he is very knowledgeable, very pleasant to work with and I would be happy to work with him again if I had the opportunity."
   },
   "REFERENCES-2": {
     "NAME": "Michael Spari",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/michael-spari-3541a3351/",
     "REFERENCES": "Dzmitry was a first-class team colleague at DA. His positive commitment and willingness to take on responsibility played a key role in helping us achieve our goals. In addition, his expertise was convincing across the board - with his in-depth knowledge and structured way of working, he was a valuable support for the entire team."
   },
   "REFERENCES-3": {
     "NAME": "Cem Erdogmus",
     "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/cem-e-4a0b6b34b/",
     "REFERENCES": "Dzmitry is an excellent team member who is very pleasant to work with and a pleasure to work with. He was able to solve his tasks independently with great skill and always had an open ear when problems arose."
+  },
+  "REFERENCES-4": {
+    "NAME": "Denis Maier",
+    "POSITION": "Team Partner",
+    "LINK": "https://www.linkedin.com/in/red-shiba/",
+    "REFERENCES": "Dzmitry showed a high level of ownership throughout the project and a remarkable commitment to the quality of his work. Of particular note is his ability to communicate clearly and efficiently, which allowed the entire team to move forward quickly. He worked on both front-end development and task handling functionality, and his technical expertise in HTML, CSS and TypeScript was always at a high level.Dzmitry was also very conscientious in the implementation of responsiveness. He showed a good eye for detail and ensured that the design worked well on all devices. His structured approach to complex tasks and his ability to quickly recognise and resolve issues made him a valuable team member and he demonstrated a high level of flexibility and willingness to continuously adapt to achieve the best possible result. Dzmitry contributed significantly to the successful realisation of the project with his reliable and focused way of working."
   },
   "CONTACT": {
     "INFO": "Say Hi!",
@@ -57,7 +66,8 @@
     "PRIVACY-FIRST": "I've read the",
     "PRIVACY-LINK": "Privacy policy",
     "PRIVACY-SECAND": "and agree to the processing of my data as outlined.",
-    "SUBMIT": " Send Message"
+    "SUBMIT": " Send Message",
+    "MASSAGE": "Thank you for your message! I will get back to you as soon as possible."
   },
 
   "PRIVACY": {

@@ -1,23 +1,49 @@
 <section class="reference-section">
   <div>
     <h2>{{ "REFERENCES.TITLE" | translate }}</h2>
-    <p>
-      {{ "REFERENCES.SUBTITLE" | translate }}
-    </p>
+    <p>{{ "REFERENCES.SUBTITLE" | translate }}</p>
   </div>
+
   <div class="reference">
-    @for(reference of references; track reference.name; let index = $index) {
-    <div class="reference-box">
+    <div
+      *ngFor="let reference of pagedReferences[currentPage]"
+      class="reference-box"
+    >
       <span class="icon">,,</span>
       <h3>{{ reference.name | translate }}</h3>
       <p>{{ reference.position | translate }}</p>
-      <p>
-        {{ reference.references | translate }}
-      </p>
+      <a href="{{ reference.link }}" target="_blank">
+        <svg
+          class="social-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.272c-.966 0-1.5-.646-1.5-1.455 0-.829.545-1.455 1.534-1.455.989 0 1.5.626 1.5 1.455 0 .809-.511 1.455-1.534 1.455zm13.5 10.272h-3v-4.772c0-1.081-.021-2.474-1.5-2.474s-1.727 1.17-1.727 2.383v4.863h-3v-9h2.897v1.234h.042c.403-.762 1.384-1.558 2.853-1.558 3.053 0 3.628 2.01 3.628 4.623v4.701z"
+          />
+        </svg>
+      </a>
+      <div class="reference-text">
+        <p>{{ reference.references | translate }}</p>
+      </div>
     </div>
-    }
+  </div>
+  <div class="pagination-buttons">
+    <button (click)="prevPage()" [disabled]="currentPage === 0">
+      ← Previous
+    </button>
+    <button
+      (click)="nextPage()"
+      [disabled]="currentPage === pagedReferences.length - 1"
+    >
+      Next →
+    </button>
   </div>
 </section>
 <div class="arrow">
-  <a href=""><img src="../../../assets/img/arrow-r.png" alt="arrow" /></a>
+  <a href="#contact"
+    ><img src="../../../assets/img/arrow-r.png" alt="arrow"
+  /></a>
 </div>
