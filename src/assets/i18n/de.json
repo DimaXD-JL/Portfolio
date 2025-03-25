@@ -8,7 +8,10 @@
   },
 
   "about-me": {
-    "About": "Über Mich"
+    "About": "Über Mich",
+    "Base": "Komme aus Neuruppin",
+    "Work": "Offen für Remote-Arbeit",
+    "Talk": "Lass uns reden!"
   },
   "title": {
     "About-me": "Ich bin Frontend-Entwickler mit einem Hintergrund im Großhandel und Online-Marketing. Mein Weg hat mich schließlich zur Webentwicklung geführt – meiner Leidenschaft für digitale Lösungen, die das Leben einfacher und zugänglicher machen. In meiner Arbeit lege ich großen Wert auf klare Strukturen, sauberen Code und eine durchdachte Nutzerführung. Mit fundierten Kenntnissen in JavaScript, HTML, CSS und Erfahrung mit Angular entwickle ich moderne, intuitive Single-Page Applications."
@@ -23,11 +26,14 @@
     "JOIN_DESC": "Task- und Kontaktmanagement-App mit Angular und Firebase. Diese moderne Angular-Anwendung bietet eine benutzerfreundliche Plattform zur effizienten Verwaltung von Tasks und Kontakten. Nach einer sicheren Authentifizierung über Firebase können Benutzer ihre Aufgaben und Kontakte einfach organisieren, bearbeiten und verwalten.",
     "POKEDEX_DESC": "Pokémon-Informationsbibliothek (basierend auf der PokéAPI) Diese einfache und effiziente JavaScript-Bibliothek bietet Zugriff auf umfangreiche Pokémon-Informationen und katalogisiert diese in einer benutzerfreundlichen Struktur. Basierend auf der PokéAPI ermöglicht sie Entwicklern, schnell und unkompliziert Daten zu Pokémon abzurufen, darunter Namen, Typen, Fähigkeiten, Statistiken und vieles mehr.",
     "PolloLoco": "Pepe's Abendteuer: Das Sprung-, Lauf- und Wurfspiel.Begleite Pepe, den mutigen Helden, auf seinem actiongeladenen Abenteuer! In diesem objektorientierten Sprung-, Lauf- und Wurfspiel muss Pepe Münzen sammeln, scharfe Tabasco-Salsa finden und sich gegen das verrückte Huhn behaupten. Mit einer Mischung aus Geschicklichkeit, Strategie und Humor bietet dieses Spiel Spaß und Herausforderung für Spieler jeden Alters.",
-    "SOON": "In diesem Bereich arbeite ich kontinuierlich an neuen Ideen, Konzepten und Lösungen. Es ist mein Raum für Innovation, Experimente und persönliche Weiterentwicklung. Doch noch mehr als das: Es ist ein Ort, der zeigt, wie sehr ich mich für neue Herausforderungen begeistern kann – sei es in meinen eigenen Projekten oder in denen, die ich für andere umsetze"
+    "SOON": "In diesem Bereich arbeite ich kontinuierlich an neuen Ideen, Konzepten und Lösungen. Es ist mein Raum für Innovation, Experimente und persönliche Weiterentwicklung. Doch noch mehr als das: Es ist ein Ort, der zeigt, wie sehr ich mich für neue Herausforderungen begeistern kann – sei es in meinen eigenen Projekten oder in denen, die ich für andere umsetze",
+    "Contact": "Kontakt"
   },
   "REFERENCES": {
     "TITLE": "Referenzen",
-    "SUBTITLE": "Feedback from the team - In the next section you will find what my colleagues say about working with me."
+    "SUBTITLE": "Feedback aus dem Team - Im nächsten Abschnitt finden Sie, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
+    "PRESVIOUS": "Zurück",
+    "NEXT": "Nächste"
   },
   "REFERENCES-1": {
     "NAME": "Martin Bock",

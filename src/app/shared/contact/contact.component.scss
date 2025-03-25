@@ -120,7 +120,7 @@ button[type="submit"]:disabled {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .contact-info > h2 {
@@ -219,7 +219,7 @@ button[type="submit"]:disabled {
 .arrow-up {
   position: relative;
   left: 250px;
-  top: 0px;
+  top: -75px;
 }
 
 .arrow-up a img {
@@ -231,25 +231,41 @@ button[type="submit"]:disabled {
   transform: scaleY(1.5);
 }
 .success-message {
-  color: #4caf50;
-  font-weight: bold;
+  border: 1px solid #4caf50;
+  color: #4caf50 !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
   margin-top: 1rem;
+  padding: 10px;
+  background-color: #fffcf3;
+  width: 224px;
+  animation: flickerShadow 2s infinite alternate;
+}
+
+@keyframes flickerShadow {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 8px 6px 15px 0px #00bc8f; /* Original-Schatten */
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    box-shadow: 8px 6px 15px 0px transparent; /* Schatten "ausgeschaltet" */
+  }
 }
 @media (max-width: 825px) {
   .arrow-up {
     left: 150px;
   }
 }
-@media (max-width: 768px) {
-  .contact-form {
-    width: 90%;
-  }
-}
-@media (max-width: 600px) {
-  .arrow-up {
-    left: 50px;
-  }
-}
+
 @media (max-width: 400px) {
   .arrow-up {
     display: none;

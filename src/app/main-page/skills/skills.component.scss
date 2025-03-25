@@ -8,7 +8,7 @@ h2 {
   position: relative;
   left: 50%;
   transform: translate(-50%, -58%);
-  font-size: clamp(24px, 8vw, 78px);
+  font-size: clamp(31px, 8vw, 78px);
   font-weight: 800;
   color: $primary;
   background-color: $secondary;
@@ -124,5 +124,8 @@ h2 {
     img {
       width: 200px;
     }
+  }
+  .new-skills {
+    margin: 15px;
   }
 }

@@ -22,8 +22,8 @@
 }
 
 .portrait {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   background-image: url("../../../assets/img/profil-bild.jpg");
   background-size: contain;
   object-fit: cover;
@@ -51,7 +51,7 @@
 
 h2 {
   font-family: "Syne", sans-serif;
-  font-size: clamp(36px, 5vw, 78px);
+  font-size: clamp(30px, 7vw, 78px);
   font-weight: 800;
   transition: color 0.3s ease;
   margin-bottom: 20px;

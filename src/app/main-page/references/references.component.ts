@@ -40,7 +40,7 @@ export class ReferencesComponent {
   currentPage = 0;
 
   constructor() {
-    const itemsPerPage = 3;
+    const itemsPerPage = 2;
     for (let i = 0; i < this.references.length; i += itemsPerPage) {
       this.pagedReferences.push(this.references.slice(i, i + itemsPerPage));
     }

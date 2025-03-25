@@ -11,7 +11,7 @@
   margin: 50px 0 50px 0;
 
   h2 {
-    font-size: clamp(20px, 9vw, 78px);
+    font-size: clamp(31px, 8vw, 78px);
     font-weight: 800;
     transition: color 0.3s ease-in-out;
 
@@ -19,12 +19,15 @@
       color: $highlight;
     }
   }
+  p {
+    font-size: clamp(14px, 4vw, 22px);
+  }
 }
 
 .reference {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -112,8 +115,10 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px #00bc8f;
+
   transform: translateY(-2px);
+  background-color: $highlight;
 }
 
 button[disabled] {
@@ -121,4 +126,16 @@ button[disabled] {
   color: #aaa;
   cursor: not-allowed;
   box-shadow: none;
+}
+.social-icon {
+  padding: 1px;
+  background-color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 74%);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.social-icon:hover {
+  background-color: $highlight;
+  transform: scale(1.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 74%);
 }

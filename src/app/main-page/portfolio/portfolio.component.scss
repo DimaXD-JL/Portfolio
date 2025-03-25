@@ -11,13 +11,12 @@
   gap: 30px;
 
   h2 {
-    font-size: clamp(20px, 5vw, 78px);
+    font-size: clamp(31px, 8vw, 78px);
     font-weight: 800;
   }
 
   p {
-    font-size: clamp(12px, 5vw, 22px);
-    padding: 0 10px;
+    font-size: clamp(14px, 4vw, 22px);
     font-weight: 400;
   }
 }
@@ -69,7 +68,7 @@ h2:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 95%;
     border: 4px solid #000;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     transform: translate(12px, 12px);
@@ -115,11 +114,15 @@ h2:hover {
   margin-top: 30px;
   gap: 20px;
 
+  h2 {
+    font-size: clamp(15px, 7vw, 45px);
+    font-weight: 800;
+  }
   p {
     color: $highlight;
-    font-size: 22px;
+    font-size: clamp(18px, 4vw, 22px);
     font-weight: 400;
-    text-align: justify;
+    text-align: start;
   }
 }
 
@@ -175,7 +178,7 @@ h2:hover {
   }
 
   .project-border::before {
-    height: 70%;
+    // height: 70%;
     transform: translate(-20px, 10px);
   }
 
@@ -185,12 +188,12 @@ h2:hover {
     left: -35px;
   }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1250px) {
   .reverse .project-border::before {
-    height: 65%;
+    height: 75%;
   }
   .project-border::before {
-    height: 77%;
+    height: 80%;
   }
 }
 

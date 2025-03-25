@@ -45,9 +45,9 @@ export class ContactComponent {
           next: (response) => {
             this.showSuccessMessage = true;
 
-            setTimeout(() => {
-              this.showSuccessMessage = false;
-            }, 10000);
+            // setTimeout(() => {
+            //   this.showSuccessMessage = false;
+            // }, 10000);
 
             ngForm.resetForm();
           },
