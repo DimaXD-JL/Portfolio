@@ -8,7 +8,7 @@
 .about {
   @include dFlex($jc: none, $fd: column);
   margin: 50px 0 110px 0;
-  padding: 0px 15px;
+  padding: 0px 25px;
 }
 .about-content {
   display: flex;
@@ -89,7 +89,7 @@ h2 {
   align-items: flex-start;
   gap: 20px;
   width: 60%;
-  padding-right: 32px;
+  padding-right: 15px;
 
   > span {
     display: flex;
@@ -123,6 +123,11 @@ h2 {
   max-width: 1440px;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1040px) {
+  .title {
+    padding-right: 0;
+  }
 }
 @media (max-width: 930px) {
   .visible-on-large {

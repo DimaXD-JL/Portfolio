@@ -3,7 +3,7 @@
     "Aboutme": "About me",
     "MySkills": "My skills",
     "Portfolio": "Portfolio",
-    "Referenz": "Referenz",
+    "Referenz": "References",
     "Contact": "Contact"
   },
 
@@ -20,7 +20,7 @@
     "SKILLS_PROMPT": "Don't see the skill you need? <a href='#contact'>Contact me</a>. I'm always ready to learn!"
   },
   "portfolio-title": {
-    "title": "Immerse yourself in a selection of my projects and experience how ideas are brought to life through creative solutions and technical expertise. Here you have the opportunity to interact with my work and experience my skills first hand. Each project reflects my passion for innovation, precision and user-centred design."
+    "title": "Here you have the opportunity to interact with my work and experience my skills first hand. Each project reflects my passion for innovation, precision and user-centred design."
   },
   "PROJECTS": {
     "JOIN_DESC": "Task and contact management app with Angular and Firebase. This modern Angular application provides a user-friendly platform for the efficient management of tasks and contacts. After secure authentication via Firebase, users can easily organise, edit and manage their tasks and contacts.",

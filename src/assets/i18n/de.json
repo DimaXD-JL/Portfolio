@@ -20,7 +20,7 @@
     "SKILLS_PROMPT": "Sie sehen die benötigte Fähigkeit nicht? <a href='#contact'>Kontaktieren Sie mich</a>. Ich bin immer bereit zu lernen!"
   },
   "portfolio-title": {
-    "title": "Tauchen Sie ein in eine Auswahl meiner Projekte und erleben Sie, wie Ideen durch kreative Lösungen und technisches Know-how zum Leben erweckt werden. Hier haben Sie die Möglichkeit, interaktiv mit meinen Arbeiten zu interagieren und meine Fähigkeiten hautnah zu erleben. Jedes Projekt spiegelt meine Leidenschaft für Innovation, Präzision und benutzerorientiertes Design wider."
+    "title": "Hier haben Sie die Möglichkeit, interaktiv mit meinen Arbeiten zu interagieren und meine Fähigkeiten hautnah zu erleben. Jedes Projekt spiegelt meine Leidenschaft für Innovation, Präzision und benutzerorientiertes Design wider."
   },
   "PROJECTS": {
     "JOIN_DESC": "Task- und Kontaktmanagement-App mit Angular und Firebase. Diese moderne Angular-Anwendung bietet eine benutzerfreundliche Plattform zur effizienten Verwaltung von Tasks und Kontakten. Nach einer sicheren Authentifizierung über Firebase können Benutzer ihre Aufgaben und Kontakte einfach organisieren, bearbeiten und verwalten.",
