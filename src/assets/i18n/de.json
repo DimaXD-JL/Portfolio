@@ -14,7 +14,7 @@
     "Talk": "Lass uns reden!"
   },
   "title": {
-    "About-me": "Ich bin Frontend-Entwickler mit einem Hintergrund im Großhandel und Online-Marketing. Mein Weg hat mich schließlich zur Webentwicklung geführt – meiner Leidenschaft für digitale Lösungen, die das Leben einfacher und zugänglicher machen. In meiner Arbeit lege ich großen Wert auf klare Strukturen, sauberen Code und eine durchdachte Nutzerführung. Mit fundierten Kenntnissen in JavaScript, HTML, CSS und Erfahrung mit Angular entwickle ich moderne, intuitive Single-Page Applications."
+    "About-me": "Ich bin Frontend-Entwickler mit einem Hintergrund im Großhandel und Online-Marketing. Mein Weg hat mich schließlich zur Webentwicklung geführt - dank meiner Leidenschaft für digitale Lösungen, die das Leben einfacher und zugänglicher machen. Bei meiner Arbeit lege ich großen Wert auf klare Strukturen, sauberen Code und eine durchdachte Benutzerführung. Mit fundierten Kenntnissen in JavaScript, HTML, CSS und Erfahrung mit Angular entwickle ich moderne, intuitive Single-Page-Anwendungen."
   },
   "new-skills": {
     "SKILLS_PROMPT": "Sie sehen die benötigte Fähigkeit nicht? <a href='#contact'>Kontaktieren Sie mich</a>. Ich bin immer bereit zu lernen!"
@@ -60,20 +60,20 @@
     "REFERENCES": "Dzmitry zeigte während des gesamten Projekts eine hohe Eigenverantwortung und ein bemerkenswertes Engagement für die Qualität seiner Arbeit. Besonders hervorzuheben ist seine Fähigkeit, klar und effizient zu kommunizieren, was es dem gesamten Team ermöglichte, zügig voranzukommen. Er arbeitete sowohl an der Front-End-Entwicklung als auch an der Funktionalität der Task-Bearbeitung, und seine technische Kompetenz in HTML, CSS und TypeScript war dabei stets auf hohem Niveau.Dzmitry war außerdem sehr gewissenhaft bei der Umsetzung der Responsiveness. Dabei zeigte er ein gutes Auge für Details und stellte sicher, dass das Design auf allen Geräten gut funktionierte. Seine strukturierte Herangehensweise an komplexe Aufgaben und seine Fähigkeit, Probleme schnell zu erkennen und zu beheben, machten ihn zu einem wertvollen Teammitglied.Er bewies zudem eine hohe Flexibilität und Bereitschaft, sich kontinuierlich anzupassen, um das bestmögliche Ergebnis zu erzielen. Dzmitry trug mit seiner zuverlässigen und fokussierten Arbeitsweise maßgeblich zur erfolgreichen Umsetzung des Projekts bei."
   },
   "CONTACT": {
-    "INFO": "Sag Hallo!",
-    "TITLE": "Möchtest du ein neues Projekt besprechen?",
-    "SUBTITLE": "Sag Hallo! Lass uns deine Ideen besprechen und sie gemeinsam umsetzen.",
+    "INFO": "Sagen Sie Hallo!",
+    "TITLE": "Möchten Sie ein neues Projekt besprechen?",
+    "SUBTITLE": "Sagen Sie Hallo! Lassen Sie uns Ihre Ideen besprechen und sie gemeinsam umsetzen.",
     "YOUNAME": "Name",
-    "YOUNAME-ERROR": "Dein Name ist erforderlich",
+    "YOUNAME-ERROR": "Name ist erforderlich",
     "YOUREMAIL": "E-Mail",
-    "YOUREMAIL-ERROR": "Deine E-Mail ist erforderlich",
+    "YOUREMAIL-ERROR": "E-Mail ist erforderlich",
     "YOURMESSAGE": "Nachricht",
-    "YOURMESSAGE-ERROR": "Deine Nachricht ist erforderlich",
+    "YOURMESSAGE-ERROR": "Nachricht ist erforderlich",
     "PRIVACY-FIRST": "Ich habe die",
     "PRIVACY-LINK": "Datenschutzerklärung",
     "PRIVACY-SECAND": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Richtlinie zu.",
     "SUBMIT": "Nachricht senden",
-    "MASSAGE": "Danke für deine Nachricht! Ich werde mich so schnell wie möglich bei dir melden."
+    "MASSAGE": "Danke für Ihre Nachricht! Ich werde mich so schnell wie möglich bei Ihnen melden."
   },
   "PRIVACY": {
     "TITLE": "Datenschutzerklärung",

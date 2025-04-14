@@ -27,8 +27,8 @@ export class PortfolioComponent {
       languages: 'Javascript | HTML | CSS |',
       description: 'PROJECTS.PolloLoco',
       img: '../../../assets/img/ElPolloLoco.png',
-      link: '',
-      gitlink: '',
+      link: 'https://www.elpolloloco.dzmitry-stashkevich.de/index.html',
+      gitlink: 'https://github.com/DimaXD-JL/PolloLoco',
     },
     {
       name: 'PokéDex',

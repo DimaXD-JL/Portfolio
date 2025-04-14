@@ -109,7 +109,7 @@ h2 {
   cursor: pointer;
   min-width: 180px;
   align-self: center;
-  margin: 50px;
+  margin: 15px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -157,5 +157,8 @@ h2 {
     img {
       width: 200px;
     }
+  }
+  .title {
+    width: 100%;
   }
 }
